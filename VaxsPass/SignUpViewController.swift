@@ -29,11 +29,13 @@ class SignUpViewController: UIViewController {
         }
         if let finalEmail = email.text, let finalPassword = password.text {
             Auth.auth().createUser(withEmail: finalEmail, password: finalPassword) { authResult,error   in
-                if(error == nil){
-                    print("Success")
+                if let user = authResult?.user {
+                    print(user)
+                } else {
+                    print("Error")
                 }
             }
+            
         }
-        
     }
 }

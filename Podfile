@@ -6,6 +6,9 @@ target 'VaxsPass' do
   use_frameworks!
 
   # Pods for VaxsPass
+pod 'ArcGIS-Runtime-SDK-iOS', '100.10' 
+pod 'GoogleMaps'
+pod 'GooglePlaces'
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'

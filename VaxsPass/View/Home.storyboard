@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZx-KB-T9Q">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,10 +14,65 @@
             <objects>
                 <viewController id="fZx-KB-T9Q" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVa-T5-y6Q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="odd-Vc-7S3">
+                                <rect key="frame" x="20" y="54.000000000000007" width="350" height="71.666666666666686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Nr5-tR-6zw">
+                                        <rect key="frame" x="0.0" y="0.0" width="271.66666666666669" height="71.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dp-BI-qqM">
+                                                <rect key="frame" x="0.0" y="0.0" width="214.66666666666666" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Light" family="Arial Hebrew" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samantha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMx-gI-bvv">
+                                                <rect key="frame" x="0.0" y="34.333333333333329" width="157" height="37.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="I5y-2a-Z8Q">
+                                        <rect key="frame" x="281.66666666666669" y="0.0" width="68.333333333333314" height="71.666666666666671"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-th-C4a">
+                                <rect key="frame" x="39" y="142.66666666666663" width="312" height="300"/>
+                                <color key="backgroundColor" red="0.92837578060000003" green="0.92850917580000003" blue="0.9283465743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-ML-JJA">
+                                <rect key="frame" x="39" y="142.66666666666663" width="312" height="300"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="YGj-KY-mml"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title=" Add Documents">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="camera.on.rectangle.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KYl-CO-sMT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="odd-Vc-7S3" secondAttribute="trailing" constant="20" id="0rx-9a-NOa"/>
+                            <constraint firstItem="rgc-ML-JJA" firstAttribute="top" secondItem="odd-Vc-7S3" secondAttribute="bottom" constant="17" id="MAU-56-5yh"/>
+                            <constraint firstItem="vqe-th-C4a" firstAttribute="leading" secondItem="KYl-CO-sMT" secondAttribute="leading" constant="39" id="Xrt-uV-aHp"/>
+                            <constraint firstItem="odd-Vc-7S3" firstAttribute="leading" secondItem="KYl-CO-sMT" secondAttribute="leading" constant="20" id="cg6-ys-ReA"/>
+                            <constraint firstItem="odd-Vc-7S3" firstAttribute="top" secondItem="KYl-CO-sMT" secondAttribute="top" constant="10" id="eiK-iq-mdd"/>
+                            <constraint firstItem="rgc-ML-JJA" firstAttribute="leading" secondItem="KYl-CO-sMT" secondAttribute="leading" constant="39" id="iYn-6j-h8d"/>
+                            <constraint firstItem="vqe-th-C4a" firstAttribute="top" secondItem="odd-Vc-7S3" secondAttribute="bottom" constant="17" id="lVI-2A-yNb"/>
+                            <constraint firstItem="KYl-CO-sMT" firstAttribute="trailing" secondItem="rgc-ML-JJA" secondAttribute="trailing" constant="39" id="qpn-K9-ZcN"/>
+                            <constraint firstItem="KYl-CO-sMT" firstAttribute="trailing" secondItem="vqe-th-C4a" secondAttribute="trailing" constant="39" id="zkD-a1-GKp"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="gdM-DP-UjL">
                         <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
@@ -27,11 +82,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Hb-gC-A01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="110"/>
+            <point key="canvasLocation" x="332.30769230769232" y="109.47867298578198"/>
         </scene>
     </scenes>
     <resources>
+        <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="profile" width="52" height="52"/>
+        <image name="qrcode" width="300" height="300"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

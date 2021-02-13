@@ -83,6 +83,7 @@ class GoogleMapsViewController: UIViewController, CLLocationManagerDelegate, MKM
                 self.locations.append(place.geometry.location)
             }
             DispatchQueue.main.async {
+                print(self.markers.count)
                 self.mapView.register(CustomAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
                 self.mapView.addAnnotations(self.markers)
                 self.mapView.showAnnotations(self.markers, animated: true)
@@ -136,7 +137,6 @@ class CustomAnnotationViewDefault: MKMarkerAnnotationView {  // or pin option
         super.init(coder: aDecoder)
     }
 }
-// vaccine location marker customized
 class CustomAnnotationView: MKMarkerAnnotationView {  // or  pin
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)

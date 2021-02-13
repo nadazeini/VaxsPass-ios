@@ -15,7 +15,6 @@
 		FA043CF625D784B800CB8078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF525D784B800CB8078 /* Assets.xcassets */; };
 		FA043CF925D784B800CB8078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF725D784B800CB8078 /* LaunchScreen.storyboard */; };
 		FA043D0225D78D7F00CB8078 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043D0125D78D7F00CB8078 /* Start.storyboard */; };
-		FA043D0525D7930B00CB8078 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D0425D7930B00CB8078 /* MapViewController.swift */; };
 		FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */; };
 		FA043D1425D7BC4000CB8078 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D1325D7BC4000CB8078 /* Models.swift */; };
 		FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D6725D84C5800CB8078 /* MapMarker.swift */; };
@@ -35,7 +34,6 @@
 		FA043CF825D784B800CB8078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA043CFA25D784B800CB8078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA043D0125D78D7F00CB8078 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
-		FA043D0425D7930B00CB8078 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
 		FA043D1325D7BC4000CB8078 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		FA043D6725D84C5800CB8078 /* MapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				FA043CF725D784B800CB8078 /* LaunchScreen.storyboard */,
 				FA043CFA25D784B800CB8078 /* Info.plist */,
 				FA043D0125D78D7F00CB8078 /* Start.storyboard */,
-				FA043D0425D7930B00CB8078 /* MapViewController.swift */,
 				FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */,
 				FA043D1325D7BC4000CB8078 /* Models.swift */,
 				FA043D6725D84C5800CB8078 /* MapMarker.swift */,
@@ -267,7 +264,6 @@
 				FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 				FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */,
-				FA043D0525D7930B00CB8078 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

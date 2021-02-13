@@ -18,10 +18,11 @@ class GoogleMapsViewController: UIViewController, CLLocationManagerDelegate, MKM
     var long: Double = 0.0
     var apiKey = "AIzaSyARNJeV0HUI1CcAVuKN6VQ__PwET2KZ6Rc"
     var locations: [Place.Location.LatLong] = []
+    var markers: [MapMarker] = []
+    var annotations = [MKAnnotation]()
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
@@ -39,7 +40,7 @@ class GoogleMapsViewController: UIViewController, CLLocationManagerDelegate, MKM
         //center to current location
         guard let locValue: CLLocationCoordinate2D = locationManager.location?.coordinate else { return }
         let initialLocation = CLLocation(latitude:self.lat, longitude: self.long)
-        mapView.register(CustomAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(CustomAnnotationViewDefault.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         mapView.centerToLocation(initialLocation)
         //zoom
         let region = MKCoordinateRegion(
@@ -57,23 +58,10 @@ class GoogleMapsViewController: UIViewController, CLLocationManagerDelegate, MKM
         mapView.delegate = self
         let marker = MapMarker(
           title: "Current Location",
-          locationName: "Current Location",
+            locationName: "Current Location",
             coordinate: CLLocationCoordinate2D(latitude: self.lat, longitude: self.long))
         mapView.addAnnotation(marker)
 
-        
-        
-        //        //display google map
-        //        let camera = GMSCameraPosition.camera(withLatitude: lat , longitude: long, zoom: 15.0)
-        //        let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
-        //        self.view.addSubview(mapView)
-        //        // Creates a marker on current location
-        //        let marker = GMSMarker()
-        //        marker.position = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
-        //        marker.icon = GMSMarker.markerImage(with: .black)
-        //        marker.map = mapView
-        
-        //        var googleURLString = NSString(format:"https://maps.googleapis.com/maps/api/place/search/json?location=[lat],[lon]&radius=[radius]&types=[type]&key=kGOOGLE_API_KEY&sensor=true",lat, long, 10, type, apiKey )
         let googleUrl = googlePlacesDataURL(forKey: apiKey, location: locValue, keyword: "covid19_vaccine_locations")
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: googleUrl) { (responseData, _, error) in
@@ -83,27 +71,24 @@ class GoogleMapsViewController: UIViewController, CLLocationManagerDelegate, MKM
             }
             guard let data = responseData, let response = try? JSONDecoder().decode(GooglePlacesResponse.self, from: data) else {
                 print("something happened")
-                
                 return
             }
+            
             for place in response.results {
+                let annotation = MapMarker(
+                    title: place.address,
+                    locationName: place.name,
+                    coordinate: CLLocationCoordinate2D(latitude: place.geometry.location.latitude, longitude: place.geometry.location.longitude))
+                self.markers.append(annotation)
                 self.locations.append(place.geometry.location)
             }
-            print(self.locations)
-            for loc in self.locations{
-                let position = CLLocationCoordinate2D(latitude: loc.latitude, longitude: loc.longitude)
-                let markers = GMSMarker(position: position)
-                markers.icon = GMSMarker.markerImage(with: .black)
-                markers.title = "Vaccine Place"
-                //                let camera1 = GMSCameraPosition.camera(withLatitude: loc.latitude , longitude: loc.longitude, zoom: 15.0)
-                //                let mapView1 = GMSMapView.map(withFrame: self.view.frame, camera: camera)
-                //                markers.map = mapView1
-                print("done")
+            DispatchQueue.main.async {
+                self.mapView.register(CustomAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+                self.mapView.addAnnotations(self.markers)
+                self.mapView.showAnnotations(self.markers, animated: true)
             }
-        }
-        print(self.locations)
-        
-        task.resume()
+        }.resume()
+    
     }
     func googlePlacesDataURL(forKey apiKey: String, location: CLLocationCoordinate2D, keyword: String) -> URL {
         
@@ -115,6 +100,7 @@ class GoogleMapsViewController: UIViewController, CLLocationManagerDelegate, MKM
         
         return URL(string: baseURL + locationString + "&" + rankby + "&" + keywrd + "&" + key)!
     }
+    //go from callout to display info
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         performSegue(withIdentifier: "LocationInfoView", sender: view)
     }
@@ -137,18 +123,32 @@ private extension MKMapView {
         setRegion(coordinateRegion, animated: true)
     }
 }
-class CustomAnnotationView: MKPinAnnotationView {  // or nowadays, you might use MKMarkerAnnotationView
+class CustomAnnotationViewDefault: MKMarkerAnnotationView {  // or pin option
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
 
         canShowCallout = true
         rightCalloutAccessoryView = UIButton(type: .infoLight)
+        markerTintColor = .red
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }
+// vaccine location marker customized
+class CustomAnnotationView: MKMarkerAnnotationView {  // or  pin
+    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
+        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
 
+        canShowCallout = true
+        rightCalloutAccessoryView = UIButton(type: .infoLight)
+        markerTintColor = .green
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+}
 
 

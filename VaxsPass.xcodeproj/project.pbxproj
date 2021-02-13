@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C5D75B59B346FA631D48008 /* Pods_VaxsPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03D23A7CA3F6DC03D3E15D9 /* Pods_VaxsPass.framework */; };
-		4CFE1AAA200739E6C96A3787 /* Pods_VaxsPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D19BEDB3E48BA86E093B0BD /* Pods_VaxsPass.framework */; };
+		1C60B06CDE0FF0FC10FD9E22 /* Pods_VaxsPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E3749A4D2C9E22A358CCD2 /* Pods_VaxsPass.framework */; };
 		FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CEC25D784B500CB8078 /* AppDelegate.swift */; };
 		FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CEE25D784B500CB8078 /* SceneDelegate.swift */; };
 		FA043CF425D784B500CB8078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF225D784B500CB8078 /* Main.storyboard */; };
@@ -19,12 +18,6 @@
 		FA043D1425D7BC4000CB8078 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D1325D7BC4000CB8078 /* Models.swift */; };
 		FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D6725D84C5800CB8078 /* MapMarker.swift */; };
 		FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		05E456F01530C623CB08DCEB /* Pods-VaxsPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.debug.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.debug.xcconfig"; sourceTree = "<group>"; };
-		94B5EFF92020EF80CEECEBAB /* Pods-VaxsPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.release.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.release.xcconfig"; sourceTree = "<group>"; };
-		A03D23A7CA3F6DC03D3E15D9 /* Pods_VaxsPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxsPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF072BDE25D78E7800C299ED /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF072BDD25D78E7800C299ED /* Auth.storyboard */; };
 		FF072BE325D7AC4200C299ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */; };
 		FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF072BF125D7AE1E00C299ED /* SignUpViewController.swift */; };
@@ -35,9 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04214ED4CC9D784875618747 /* Pods-VaxsPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.debug.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.debug.xcconfig"; sourceTree = "<group>"; };
-		26D9699159559598F8582B7F /* Pods-VaxsPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.release.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.release.xcconfig"; sourceTree = "<group>"; };
-		7D19BEDB3E48BA86E093B0BD /* Pods_VaxsPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxsPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		416F149E41CECFEF3F764748 /* Pods-VaxsPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.release.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.release.xcconfig"; sourceTree = "<group>"; };
+		B36DA30633B943B103C74350 /* Pods-VaxsPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.debug.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.debug.xcconfig"; sourceTree = "<group>"; };
+		D3E3749A4D2C9E22A358CCD2 /* Pods_VaxsPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxsPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA043CE925D784B500CB8078 /* VaxsPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaxsPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA043CEC25D784B500CB8078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA043CEE25D784B500CB8078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,29 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5D75B59B346FA631D48008 /* Pods_VaxsPass.framework in Frameworks */,
-				4CFE1AAA200739E6C96A3787 /* Pods_VaxsPass.framework in Frameworks */,
+				1C60B06CDE0FF0FC10FD9E22 /* Pods_VaxsPass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6662D82A64489DC68DD36078 /* Frameworks */ = {
+		E9B76416B82590CEEFA7422B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A03D23A7CA3F6DC03D3E15D9 /* Pods_VaxsPass.framework */,
+				B36DA30633B943B103C74350 /* Pods-VaxsPass.debug.xcconfig */,
+				416F149E41CECFEF3F764748 /* Pods-VaxsPass.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		56BB2A0B6371E07FCC1A5386 /* Pods */ = {
+		EF34CEDCFE21F808FEDCD6DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04214ED4CC9D784875618747 /* Pods-VaxsPass.debug.xcconfig */,
-				26D9699159559598F8582B7F /* Pods-VaxsPass.release.xcconfig */,
+				D3E3749A4D2C9E22A358CCD2 /* Pods_VaxsPass.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FA043CE025D784B500CB8078 = {
@@ -94,10 +87,9 @@
 			children = (
 				FA043CEB25D784B500CB8078 /* VaxsPass */,
 				FA043CEA25D784B500CB8078 /* Products */,
-				D7747BAD1E1ED01189761B9A /* Pods */,
-				6662D82A64489DC68DD36078 /* Frameworks */,
-				56BB2A0B6371E07FCC1A5386 /* Pods */,
-				FCD9667FBE18DABDA84066B1 /* Frameworks */,
+				FA043D7425D87EA000CB8078 /* Recovered References */,
+				E9B76416B82590CEEFA7422B /* Pods */,
+				EF34CEDCFE21F808FEDCD6DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,12 +121,11 @@
 			path = VaxsPass;
 			sourceTree = "<group>";
 		};
-		FCD9667FBE18DABDA84066B1 /* Frameworks */ = {
+		FA043D7425D87EA000CB8078 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				7D19BEDB3E48BA86E093B0BD /* Pods_VaxsPass.framework */,
 			);
-			name = Frameworks;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		FF0F547D25D7D41B002C39B6 /* Controller */ = {
@@ -165,13 +156,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA043CFD25D784B800CB8078 /* Build configuration list for PBXNativeTarget "VaxsPass" */;
 			buildPhases = (
-				AB53CF2DC86A4556333EC45C /* [CP] Check Pods Manifest.lock */,
+				500D732A06660EB7FFDE258A /* [CP] Check Pods Manifest.lock */,
 				44E529D1320D13308F217E10 /* [CP] Prepare Artifacts */,
 				FA043CE525D784B500CB8078 /* Sources */,
 				FA043CE625D784B500CB8078 /* Frameworks */,
 				FA043CE725D784B500CB8078 /* Resources */,
-				6185B824E755163A94023386 /* [CP] Embed Pods Frameworks */,
-				262DF9C579EEE64DA5026CA7 /* [CP] Copy Pods Resources */,
+				AD39FA6D3EA7924B1FFE878F /* [CP] Embed Pods Frameworks */,
+				54A5A341198565812B30898B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,23 +223,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		262DF9C579EEE64DA5026CA7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		44E529D1320D13308F217E10 /* [CP] Prepare Artifacts */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,24 +240,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C1BDAB32CE58CC927F7E6DE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3D765C4D1471BF8D4BFA93F /* [CP] Check Pods Manifest.lock */ = {
+		500D732A06660EB7FFDE258A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,6 +262,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		54A5A341198565812B30898B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD39FA6D3EA7924B1FFE878F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -312,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA043CF125D784B500CB8078 /* ViewController.swift in Sources */,
 				FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
 				FA043D1425D7BC4000CB8078 /* Models.swift in Sources */,
@@ -468,12 +458,12 @@
 		};
 		FA043CFE25D784B800CB8078 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05E456F01530C623CB08DCEB /* Pods-VaxsPass.debug.xcconfig */;
+			baseConfigurationReference = B36DA30633B943B103C74350 /* Pods-VaxsPass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4WMQY24R33;
+				DEVELOPMENT_TEAM = 8YJ5XVX3PL;
 				INFOPLIST_FILE = VaxsPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,12 +478,12 @@
 		};
 		FA043CFF25D784B800CB8078 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26D9699159559598F8582B7F /* Pods-VaxsPass.release.xcconfig */;
+			baseConfigurationReference = 416F149E41CECFEF3F764748 /* Pods-VaxsPass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4WMQY24R33;
+				DEVELOPMENT_TEAM = 8YJ5XVX3PL;
 				INFOPLIST_FILE = VaxsPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="nqL-LZ-9dg">
             <objects>
-                <viewController id="ceL-iB-52V" sceneMemberID="viewController">
+                <viewController id="ceL-iB-52V" customClass="SignInViewController" customModule="VaxsPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NGH-89-iaQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,6 +83,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInPressed:" destination="ceL-iB-52V" eventType="touchUpInside" id="9xP-9p-Sma"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Email" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-Y9-dfr">
                                 <rect key="frame" x="22" y="517.66666666666663" width="346" height="54"/>
@@ -126,6 +129,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NhM-YS-9xC"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="bgb-Y9-dfr" id="feC-7O-Gnz"/>
+                        <outlet property="passwordTextField" destination="mML-Ll-qKm" id="gTA-Li-gDC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thx-vh-SHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< vaxs-map
 		5C5D75B59B346FA631D48008 /* Pods_VaxsPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03D23A7CA3F6DC03D3E15D9 /* Pods_VaxsPass.framework */; };
-=======
 		4CFE1AAA200739E6C96A3787 /* Pods_VaxsPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D19BEDB3E48BA86E093B0BD /* Pods_VaxsPass.framework */; };
->>>>>>> master
 		FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CEC25D784B500CB8078 /* AppDelegate.swift */; };
 		FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CEE25D784B500CB8078 /* SceneDelegate.swift */; };
 		FA043CF425D784B500CB8078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF225D784B500CB8078 /* Main.storyboard */; };
 		FA043CF625D784B800CB8078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF525D784B800CB8078 /* Assets.xcassets */; };
 		FA043CF925D784B800CB8078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF725D784B800CB8078 /* LaunchScreen.storyboard */; };
-<<<<<<< vaxs-map
 		FA043D0225D78D7F00CB8078 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043D0125D78D7F00CB8078 /* Start.storyboard */; };
 		FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */; };
 		FA043D1425D7BC4000CB8078 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D1325D7BC4000CB8078 /* Models.swift */; };
@@ -29,7 +25,6 @@
 		05E456F01530C623CB08DCEB /* Pods-VaxsPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.debug.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.debug.xcconfig"; sourceTree = "<group>"; };
 		94B5EFF92020EF80CEECEBAB /* Pods-VaxsPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.release.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.release.xcconfig"; sourceTree = "<group>"; };
 		A03D23A7CA3F6DC03D3E15D9 /* Pods_VaxsPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxsPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-=======
 		FF072BDE25D78E7800C299ED /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF072BDD25D78E7800C299ED /* Auth.storyboard */; };
 		FF072BE325D7AC4200C299ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */; };
 		FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF072BF125D7AE1E00C299ED /* SignUpViewController.swift */; };
@@ -43,7 +38,6 @@
 		04214ED4CC9D784875618747 /* Pods-VaxsPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.debug.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.debug.xcconfig"; sourceTree = "<group>"; };
 		26D9699159559598F8582B7F /* Pods-VaxsPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.release.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.release.xcconfig"; sourceTree = "<group>"; };
 		7D19BEDB3E48BA86E093B0BD /* Pods_VaxsPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxsPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
->>>>>>> master
 		FA043CE925D784B500CB8078 /* VaxsPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaxsPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA043CEC25D784B500CB8078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA043CEE25D784B500CB8078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,13 +45,11 @@
 		FA043CF525D784B800CB8078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA043CF825D784B800CB8078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA043CFA25D784B800CB8078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< vaxs-map
 		FA043D0125D78D7F00CB8078 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
 		FA043D1325D7BC4000CB8078 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		FA043D6725D84C5800CB8078 /* MapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
 		FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewController.swift; sourceTree = "<group>"; };
-=======
 		FF072BDD25D78E7800C299ED /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF072BF125D7AE1E00C299ED /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +57,6 @@
 		FF3CF6E325D8033A0002142B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FF3CF7A225D85F250002142B /* VisionAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAPIRequest.swift; sourceTree = "<group>"; };
 		FF3CF7A825D8681E0002142B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
->>>>>>> master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,18 +64,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< vaxs-map
 				5C5D75B59B346FA631D48008 /* Pods_VaxsPass.framework in Frameworks */,
-=======
 				4CFE1AAA200739E6C96A3787 /* Pods_VaxsPass.framework in Frameworks */,
->>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< vaxs-map
 		6662D82A64489DC68DD36078 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,18 +80,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7747BAD1E1ED01189761B9A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				05E456F01530C623CB08DCEB /* Pods-VaxsPass.debug.xcconfig */,
-				94B5EFF92020EF80CEECEBAB /* Pods-VaxsPass.release.xcconfig */,
-=======
 		56BB2A0B6371E07FCC1A5386 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				04214ED4CC9D784875618747 /* Pods-VaxsPass.debug.xcconfig */,
 				26D9699159559598F8582B7F /* Pods-VaxsPass.release.xcconfig */,
->>>>>>> master
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -114,13 +94,10 @@
 			children = (
 				FA043CEB25D784B500CB8078 /* VaxsPass */,
 				FA043CEA25D784B500CB8078 /* Products */,
-<<<<<<< vaxs-map
 				D7747BAD1E1ED01189761B9A /* Pods */,
 				6662D82A64489DC68DD36078 /* Frameworks */,
-=======
 				56BB2A0B6371E07FCC1A5386 /* Pods */,
 				FCD9667FBE18DABDA84066B1 /* Frameworks */,
->>>>>>> master
 			);
 			sourceTree = "<group>";
 		};
@@ -141,16 +118,13 @@
 				FF0F547E25D7D43A002C39B6 /* View */,
 				FA043CF525D784B800CB8078 /* Assets.xcassets */,
 				FA043CFA25D784B800CB8078 /* Info.plist */,
-<<<<<<< vaxs-map
 				FA043D0125D78D7F00CB8078 /* Start.storyboard */,
 				FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */,
 				FA043D1325D7BC4000CB8078 /* Models.swift */,
 				FA043D6725D84C5800CB8078 /* MapMarker.swift */,
 				FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */,
-=======
 				FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */,
 				FF3CF7A225D85F250002142B /* VisionAPIRequest.swift */,
->>>>>>> master
 			);
 			path = VaxsPass;
 			sourceTree = "<group>";
@@ -191,7 +165,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA043CFD25D784B800CB8078 /* Build configuration list for PBXNativeTarget "VaxsPass" */;
 			buildPhases = (
-<<<<<<< vaxs-map
 				AB53CF2DC86A4556333EC45C /* [CP] Check Pods Manifest.lock */,
 				44E529D1320D13308F217E10 /* [CP] Prepare Artifacts */,
 				FA043CE525D784B500CB8078 /* Sources */,
@@ -199,13 +172,6 @@
 				FA043CE725D784B500CB8078 /* Resources */,
 				6185B824E755163A94023386 /* [CP] Embed Pods Frameworks */,
 				262DF9C579EEE64DA5026CA7 /* [CP] Copy Pods Resources */,
-=======
-				C3D765C4D1471BF8D4BFA93F /* [CP] Check Pods Manifest.lock */,
-				FA043CE525D784B500CB8078 /* Sources */,
-				FA043CE625D784B500CB8078 /* Frameworks */,
-				FA043CE725D784B500CB8078 /* Resources */,
-				C1BDAB32CE58CC927F7E6DE3 /* [CP] Embed Pods Frameworks */,
->>>>>>> master
 			);
 			buildRules = (
 			);
@@ -255,12 +221,9 @@
 			files = (
 				FF072BDE25D78E7800C299ED /* Auth.storyboard in Resources */,
 				FA043CF925D784B800CB8078 /* LaunchScreen.storyboard in Resources */,
-<<<<<<< vaxs-map
 				FA043D0225D78D7F00CB8078 /* Start.storyboard in Resources */,
-=======
 				FF072BE325D7AC4200C299ED /* GoogleService-Info.plist in Resources */,
 				FF3CF6E425D8033A0002142B /* Home.storyboard in Resources */,
->>>>>>> master
 				FA043CF625D784B800CB8078 /* Assets.xcassets in Resources */,
 				FA043CF425D784B500CB8078 /* Main.storyboard in Resources */,
 			);
@@ -269,7 +232,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-<<<<<<< vaxs-map
 		262DF9C579EEE64DA5026CA7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,10 +266,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6185B824E755163A94023386 /* [CP] Embed Pods Frameworks */ = {
-=======
 		C1BDAB32CE58CC927F7E6DE3 /* [CP] Embed Pods Frameworks */ = {
->>>>>>> master
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,11 +283,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-<<<<<<< vaxs-map
-		AB53CF2DC86A4556333EC45C /* [CP] Check Pods Manifest.lock */ = {
-=======
 		C3D765C4D1471BF8D4BFA93F /* [CP] Check Pods Manifest.lock */ = {
->>>>>>> master
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< vaxs-map
 				FA043CF125D784B500CB8078 /* ViewController.swift in Sources */,
 				FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
@@ -365,14 +319,12 @@
 				FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 				FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */,
-=======
 				FF0F546625D7D10A002C39B6 /* SignInViewController.swift in Sources */,
 				FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
 				FF3CF7A325D85F250002142B /* VisionAPIRequest.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 				FF3CF7A925D8681E0002142B /* HomeViewController.swift in Sources */,
->>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,11 +468,7 @@
 		};
 		FA043CFE25D784B800CB8078 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< vaxs-map
 			baseConfigurationReference = 05E456F01530C623CB08DCEB /* Pods-VaxsPass.debug.xcconfig */;
-=======
-			baseConfigurationReference = 04214ED4CC9D784875618747 /* Pods-VaxsPass.debug.xcconfig */;
->>>>>>> master
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -540,11 +488,7 @@
 		};
 		FA043CFF25D784B800CB8078 /* Release */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< vaxs-map
-			baseConfigurationReference = 94B5EFF92020EF80CEECEBAB /* Pods-VaxsPass.release.xcconfig */;
-=======
 			baseConfigurationReference = 26D9699159559598F8582B7F /* Pods-VaxsPass.release.xcconfig */;
->>>>>>> master
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

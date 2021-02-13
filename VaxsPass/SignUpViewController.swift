@@ -28,13 +28,20 @@ class SignUpViewController: UIViewController {
         }
         if let finalEmail = email.text, let finalPassword = password.text {
             Auth.auth().createUser(withEmail: finalEmail, password: finalPassword) { authResult,error   in
-                if let user = authResult?.user {
-                    print(user)
+                
+                var message: String = ""
+                
+                if (authResult?.user) != nil {
+                    message = "User was sucessfully created."
                 } else {
-                    print("Error")
+                    message = "There was an error."
                 }
+                let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+                    self.performSegue(withIdentifier: "signIn", sender: self)
+                }))
+                self.present(alert, animated: true, completion: nil)
             }
-            
         }
     }
 }

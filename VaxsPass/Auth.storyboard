@@ -146,7 +146,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="arrow.backward" catalog="system" id="uf2-TF-eRg">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <segue destination="ceL-iB-52V" kind="presentation" modalPresentationStyle="fullScreen" id="h4l-4g-tFc"/>
+                                                <segue destination="ceL-iB-52V" kind="presentation" identifier="signIn" modalPresentationStyle="fullScreen" id="h4l-4g-tFc"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

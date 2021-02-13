@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		FA043CF925D784B800CB8078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF725D784B800CB8078 /* LaunchScreen.storyboard */; };
 		FF072BDE25D78E7800C299ED /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF072BDD25D78E7800C299ED /* Auth.storyboard */; };
 		FF072BE325D7AC4200C299ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */; };
+		FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF072BF125D7AE1E00C299ED /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FA043CFA25D784B800CB8078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF072BDD25D78E7800C299ED /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF072BF125D7AE1E00C299ED /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,6 @@
 				04214ED4CC9D784875618747 /* Pods-VaxsPass.debug.xcconfig */,
 				26D9699159559598F8582B7F /* Pods-VaxsPass.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,7 @@
 				FA043CEE25D784B500CB8078 /* SceneDelegate.swift */,
 				FA043CF225D784B500CB8078 /* Main.storyboard */,
 				FF072BDD25D78E7800C299ED /* Auth.storyboard */,
+				FF072BF125D7AE1E00C299ED /* SignUpViewController.swift */,
 				FA043CF525D784B800CB8078 /* Assets.xcassets */,
 				FA043CF725D784B800CB8078 /* LaunchScreen.storyboard */,
 				FA043CFA25D784B800CB8078 /* Info.plist */,
@@ -211,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 			);

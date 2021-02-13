@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="1160.8695652173915" y="-43.526785714285715"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="6O1-h2-jbs">
             <objects>
-                <viewController id="Aq3-nr-cjX" sceneMemberID="viewController">
+                <viewController id="Aq3-nr-cjX" customClass="SignUpViewController" customModule="VaxsPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5f2-uf-xKA">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
@@ -218,6 +218,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="SignUpPressed:" destination="Aq3-nr-cjX" eventType="touchUpInside" id="R67-fp-OS1"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5DY-AT-sgc">
                                 <rect key="frame" x="70" y="780" width="250" height="30"/>
@@ -248,6 +251,7 @@
                             <constraint firstItem="hgr-cE-ZH3" firstAttribute="trailing" secondItem="obF-BR-jCo" secondAttribute="trailing" constant="22" id="8Fo-aH-hYJ"/>
                             <constraint firstItem="hlZ-en-NLZ" firstAttribute="top" secondItem="5Xs-lF-0gV" secondAttribute="bottom" constant="8" id="8Pv-FE-DF6"/>
                             <constraint firstItem="5DY-AT-sgc" firstAttribute="top" secondItem="8mv-7N-cja" secondAttribute="bottom" constant="57" id="CaG-hA-QIe"/>
+                            <constraint firstItem="5DY-AT-sgc" firstAttribute="bottom" secondItem="hgr-cE-ZH3" secondAttribute="bottom" id="ESk-dL-plM"/>
                             <constraint firstItem="8mv-7N-cja" firstAttribute="leading" secondItem="hgr-cE-ZH3" secondAttribute="leading" constant="42" id="Fme-ti-OO4"/>
                             <constraint firstItem="5Xs-lF-0gV" firstAttribute="top" secondItem="sLD-sb-5aC" secondAttribute="bottom" constant="50" id="H8Y-Kg-cIG"/>
                             <constraint firstItem="hgr-cE-ZH3" firstAttribute="trailing" secondItem="5Xs-lF-0gV" secondAttribute="trailing" constant="20" id="NQE-AI-Pj9"/>
@@ -264,6 +268,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F1C-ZC-l9g"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="boG-oP-e2j" id="AWh-Ax-6MH"/>
+                        <outlet property="email" destination="jMc-WP-FgH" id="LnM-Qz-3WC"/>
+                        <outlet property="fullName" destination="sNw-V9-2HT" id="XjU-cx-Lur"/>
+                        <outlet property="password" destination="4Ay-xS-aLV" id="aRI-2Z-rUz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1g-Dj-GMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

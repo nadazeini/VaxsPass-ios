@@ -56,6 +56,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.2.0):
     - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (6.5.6)
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
     - nanopb/encode (= 2.30907.0)
@@ -65,6 +66,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Analytics
+  - IQKeyboardManagerSwift
 
 SPEC REPOS:
   trunk:
@@ -76,6 +78,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - IQKeyboardManagerSwift
     - nanopb
     - PromisesObjC
 
@@ -88,9 +91,10 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 688d7f00e2894d9e13823ed9a028b13b993bc277
   GoogleDataTransport: 1024b1a4dfbd7a0e92cb20d7e0a6f1fb66b449a4
   GoogleUtilities: d866834472f1324d080496bc67ab3ce5d0d46027
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 39e09d99f1a93a6b80cc768752b83e313dd0b53a
+PODFILE CHECKSUM: e80a51c395fb146934cb9d02a6aae4e2a03f6f82
 
 COCOAPODS: 1.10.1

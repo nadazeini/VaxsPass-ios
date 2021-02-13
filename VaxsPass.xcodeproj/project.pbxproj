@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CEC25D784B500CB8078 /* AppDelegate.swift */; };
 		FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CEE25D784B500CB8078 /* SceneDelegate.swift */; };
-		FA043CF125D784B500CB8078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CF025D784B500CB8078 /* ViewController.swift */; };
 		FA043CF425D784B500CB8078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF225D784B500CB8078 /* Main.storyboard */; };
 		FA043CF625D784B800CB8078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF525D784B800CB8078 /* Assets.xcassets */; };
 		FA043CF925D784B800CB8078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF725D784B800CB8078 /* LaunchScreen.storyboard */; };
+		FF072BDE25D78E7800C299ED /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF072BDD25D78E7800C299ED /* Auth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA043CE925D784B500CB8078 /* VaxsPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaxsPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA043CEC25D784B500CB8078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA043CEE25D784B500CB8078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA043CF025D784B500CB8078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA043CF325D784B500CB8078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA043CF525D784B800CB8078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA043CF825D784B800CB8078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA043CFA25D784B800CB8078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF072BDD25D78E7800C299ED /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				FA043CEC25D784B500CB8078 /* AppDelegate.swift */,
 				FA043CEE25D784B500CB8078 /* SceneDelegate.swift */,
-				FA043CF025D784B500CB8078 /* ViewController.swift */,
 				FA043CF225D784B500CB8078 /* Main.storyboard */,
+				FF072BDD25D78E7800C299ED /* Auth.storyboard */,
 				FA043CF525D784B800CB8078 /* Assets.xcassets */,
 				FA043CF725D784B800CB8078 /* LaunchScreen.storyboard */,
 				FA043CFA25D784B800CB8078 /* Info.plist */,
@@ -124,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF072BDE25D78E7800C299ED /* Auth.storyboard in Resources */,
 				FA043CF925D784B800CB8078 /* LaunchScreen.storyboard in Resources */,
 				FA043CF625D784B800CB8078 /* Assets.xcassets in Resources */,
 				FA043CF425D784B500CB8078 /* Main.storyboard in Resources */,
@@ -137,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA043CF125D784B500CB8078 /* ViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YJ5XVX3PL;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = VaxsPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YJ5XVX3PL;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = VaxsPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

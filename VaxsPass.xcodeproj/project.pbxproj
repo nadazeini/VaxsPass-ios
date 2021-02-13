@@ -19,6 +19,7 @@
 		FF0F546625D7D10A002C39B6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F546525D7D10A002C39B6 /* SignInViewController.swift */; };
 		FF3CF6E425D8033A0002142B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3CF6E325D8033A0002142B /* Home.storyboard */; };
 		FF3CF6EB25D80C3A0002142B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CF6EA25D80C3A0002142B /* HomeViewController.swift */; };
+		FF3CF7A325D85F250002142B /* VisionAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CF7A225D85F250002142B /* VisionAPIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FF0F546525D7D10A002C39B6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF3CF6E325D8033A0002142B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FF3CF6EA25D80C3A0002142B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = VaxsPass/View/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		FF3CF7A225D85F250002142B /* VisionAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAPIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				FA043CF525D784B800CB8078 /* Assets.xcassets */,
 				FA043CFA25D784B800CB8078 /* Info.plist */,
 				FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */,
+				FF3CF7A225D85F250002142B /* VisionAPIRequest.swift */,
 			);
 			path = VaxsPass;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				FF0F546625D7D10A002C39B6 /* SignInViewController.swift in Sources */,
 				FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
+				FF3CF7A325D85F250002142B /* VisionAPIRequest.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

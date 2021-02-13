@@ -7,17 +7,13 @@
 
 import UIKit
 import Vision
-import Alamofire
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     let image = UIImagePickerController()
     
-    
-    
-    let headers: HTTPHeaders = [
-        "Authorization": "Bearer AIzaSyBZZOFM9otkX6J0NsDtDoNyNybY3HG7xeE",
-        "Content-Type": "application/json; charset=utf-8"
+    let parameters: [String: [String]] = [
+        "requests": [{}]
     ]
     
     override func viewDidLoad() {
@@ -29,25 +25,6 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let userImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage , let base64Image = userImage.jpegData(compressionQuality: 1)?.base64EncodedString(){
             
-            let json = """
-{
-            "requests": [
-              {
-                "image": {
-                  "content": \(base64Image)
-                },
-                "features": [
-                  {
-                    "type": "DOCUMENT_TEXT_DETECTION"
-                  }
-                ]
-              }
-            ]
-          }
-"""
-            let parameters = json.data(using: .utf8)!
-            let result = AF.request("https://vision.googleapis.com/v1/images:annotate", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers)
-            print(result.data)
         }
     }
     

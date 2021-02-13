@@ -9,5 +9,10 @@ target 'VaxsPass' do
 pod 'ArcGIS-Runtime-SDK-iOS', '100.10' 
 pod 'GoogleMaps'
 pod 'GooglePlaces'
-
+pod 'Firebase/Analytics'
+pod 'Firebase/Auth'
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+pod 'IQKeyboardManagerSwift'
+pod 'Alamofire'
 end

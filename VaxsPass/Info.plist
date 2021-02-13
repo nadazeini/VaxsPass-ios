@@ -6,6 +6,8 @@
 	<string>Allow VaxsPass To Access Your Location</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Allow VaxsPass To Access Your Location</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To click photo of your document</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

@@ -18,7 +18,8 @@
 		FA043D0525D7930B00CB8078 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D0425D7930B00CB8078 /* MapViewController.swift */; };
 		FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */; };
 		FA043D1425D7BC4000CB8078 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D1325D7BC4000CB8078 /* Models.swift */; };
-		FA043D1725D7BCCF00CB8078 /* GoogleClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D1625D7BCCF00CB8078 /* GoogleClient.swift */; };
+		FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D6725D84C5800CB8078 /* MapMarker.swift */; };
+		FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,8 @@
 		FA043D0425D7930B00CB8078 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
 		FA043D1325D7BC4000CB8078 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		FA043D1625D7BCCF00CB8078 /* GoogleClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleClient.swift; sourceTree = "<group>"; };
+		FA043D6725D84C5800CB8078 /* MapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
+		FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 				FA043D0425D7930B00CB8078 /* MapViewController.swift */,
 				FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */,
 				FA043D1325D7BC4000CB8078 /* Models.swift */,
-				FA043D1625D7BCCF00CB8078 /* GoogleClient.swift */,
+				FA043D6725D84C5800CB8078 /* MapMarker.swift */,
+				FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */,
 			);
 			path = VaxsPass;
 			sourceTree = "<group>";
@@ -257,12 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA043D1725D7BCCF00CB8078 /* GoogleClient.swift in Sources */,
 				FA043CF125D784B500CB8078 /* ViewController.swift in Sources */,
 				FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
 				FA043D1425D7BC4000CB8078 /* Models.swift in Sources */,
+				FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
+				FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */,
 				FA043D0525D7930B00CB8078 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

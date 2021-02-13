@@ -87,6 +87,35 @@
             </objects>
             <point key="canvasLocation" x="52" y="417"/>
         </scene>
+        <!--LocationInfoViewController-->
+        <scene sceneID="FO4-dX-tC9">
+            <objects>
+                <viewController title="LocationInfoViewController" id="hRv-8a-fX9" customClass="LocationInfoViewController" customModule="VaxsPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kWM-0S-RWE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwj-cM-SRf">
+                                <rect key="frame" x="341" y="19" width="63" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dissmissAction:" destination="hRv-8a-fX9" eventType="touchUpInside" id="ZEK-h4-eOV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hVn-Vw-mHn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="dissmissButton" destination="Jwj-cM-SRf" id="NkW-Qg-HUf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KlL-rX-0p0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1901" y="-115"/>
+        </scene>
         <!--GoogleMapsViewController-->
         <scene sceneID="Aux-3s-3DM">
             <objects>
@@ -94,14 +123,30 @@
                     <view key="view" contentMode="scaleToFill" id="FLJ-Iq-BYm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hwt-sL-YQt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Uak-CM-Jsv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uak-CM-Jsv" firstAttribute="bottom" secondItem="hwt-sL-YQt" secondAttribute="bottom" id="19y-KK-efM"/>
+                            <constraint firstItem="hwt-sL-YQt" firstAttribute="top" secondItem="Uak-CM-Jsv" secondAttribute="top" id="3tS-Qz-rSI"/>
+                            <constraint firstItem="Uak-CM-Jsv" firstAttribute="bottom" secondItem="hwt-sL-YQt" secondAttribute="bottom" id="M6y-ZD-n44"/>
+                            <constraint firstItem="hwt-sL-YQt" firstAttribute="leading" secondItem="Uak-CM-Jsv" secondAttribute="leading" id="cSc-I4-UfL"/>
+                            <constraint firstItem="Uak-CM-Jsv" firstAttribute="trailing" secondItem="hwt-sL-YQt" secondAttribute="trailing" id="o9C-c9-vJB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="location.circle" catalog="system" id="R88-uR-Zey"/>
+                    <connections>
+                        <outlet property="mapView" destination="hwt-sL-YQt" id="23C-Hh-ENb"/>
+                        <segue destination="hRv-8a-fX9" kind="presentation" identifier="LocationInfoView" id="x9Y-Jt-Jnb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9s-zN-sbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1204" y="-56"/>
+            <point key="canvasLocation" x="-1204.3478260869565" y="-56.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rZv-MM-xNx">

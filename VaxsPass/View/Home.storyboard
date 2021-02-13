@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="22p-pk-rYs">
             <objects>
-                <viewController id="fZx-KB-T9Q" sceneMemberID="viewController">
+                <viewController id="fZx-KB-T9Q" customClass="HomeViewController" customModule="VaxsPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVa-T5-y6Q">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,11 +53,14 @@
                                     <constraint firstAttribute="height" constant="300" id="YGj-KY-mml"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title=" Add Documents">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                     <imageReference key="image" image="camera.on.rectangle.fill" catalog="system" symbolScale="large"/>
                                 </state>
+                                <connections>
+                                    <action selector="addDocumentsPressed:" destination="fZx-KB-T9Q" eventType="touchUpInside" id="lQT-eo-BIi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KYl-CO-sMT"/>
@@ -90,6 +93,9 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="profile" width="52" height="52"/>
         <image name="qrcode" width="300" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

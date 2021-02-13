@@ -24,9 +24,10 @@ class SignInViewController: UIViewController {
                 if error != nil {
                     let alert = UIAlertController(title: nil, message: "Error Logging in", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
                 else {
-                    print(result?.user.uid)
+                    print(result?.user.uid as Any)
                     self.performSegue(withIdentifier: "home", sender: self)
                 }
             }

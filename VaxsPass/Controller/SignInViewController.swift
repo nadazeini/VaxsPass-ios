@@ -27,7 +27,7 @@ class SignInViewController: UIViewController {
                 }
                 else {
                     print(result?.user.uid)
-                    //Segue to homescreen
+                    self.performSegue(withIdentifier: "home", sender: self)
                 }
             }
         }

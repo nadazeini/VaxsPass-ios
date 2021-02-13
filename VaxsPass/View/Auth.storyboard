@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="iqj-hR-qak">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WelcomeIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="iqj-hR-qak">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="375" id="CFw-xh-VqN"/>
@@ -34,7 +34,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mML-Ll-qKm">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hello123" placeholder=" Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mML-Ll-qKm">
                                 <rect key="frame" x="22" y="579.66666666666663" width="346" height="54"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
@@ -87,7 +87,7 @@
                                     <action selector="signInPressed:" destination="ceL-iB-52V" eventType="touchUpInside" id="9xP-9p-Sma"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Email" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-Y9-dfr">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test2@hello.com" placeholder=" Email" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-Y9-dfr">
                                 <rect key="frame" x="22" y="517.66666666666663" width="346" height="54"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
@@ -132,6 +132,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="bgb-Y9-dfr" id="feC-7O-Gnz"/>
                         <outlet property="passwordTextField" destination="mML-Ll-qKm" id="gTA-Li-gDC"/>
+                        <segue destination="Gaz-gw-ePw" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="gnn-KB-Kw7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thx-vh-SHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -286,13 +287,40 @@
             </objects>
             <point key="canvasLocation" x="2205" y="-44"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Hq0-uV-MGJ">
+            <objects>
+                <tabBarController id="Gaz-gw-ePw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NfC-62-tUY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0Fu-AO-pTT" kind="relationship" relationship="viewControllers" id="ugc-Vy-7K9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxD-bB-4Be" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3179" y="-55"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="2o4-nH-S2C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="0Fu-AO-pTT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="u6c-Lv-jKL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWi-ws-s0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4029" y="-164"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="h4l-4g-tFc"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="WelcomeIllustration" width="750" height="728"/>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
-        <image name="welcomeIllustration" width="750" height="728"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

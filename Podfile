@@ -7,5 +7,6 @@ target 'VaxsPass' do
 
   # Pods for VaxsPass
 pod 'Firebase/Analytics'
+pod 'Firebase/Auth'
 pod 'IQKeyboardManagerSwift'
 end

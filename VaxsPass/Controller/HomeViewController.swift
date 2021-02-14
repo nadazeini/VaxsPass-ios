@@ -13,6 +13,7 @@ import Firebase
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     let userID = Auth.auth().currentUser?.uid
     @IBOutlet weak var addDocumentsButton: UIButton!
+    @IBOutlet weak var username: UILabel!
     @IBOutlet weak var imgQRCode: UIImageView!
     var qrcodeImage: CIImage!
     var create_user_params : [String:Any] = [
@@ -23,7 +24,18 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         "taken": 1,
         "completed": false
     ]
-    
+    override func viewWillAppear(_ animated: Bool) {
+//        FirebaseReferences.usersRef.child("\(userID!)/username").observeSingleEvent(of: .value) { (snapshot) in
+//            let newLoc = FirebaseReferences.usersRef.child(child("\(userID!)/username"))
+//        }
+        let ref = FirebaseReferences.usersRef.child(userID!)
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+             if let users = snapshot.value as? [String:Any] {
+                  print(users["username"])
+                self.username.text = users["username"] as? String
+             }
+        })
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         image.delegate = self

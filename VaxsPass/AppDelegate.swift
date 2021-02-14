@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
+
 //        var ref: DatabaseReference!
 //        ref = Database.database().reference().ref.child("userInfo")
         //realtime db setup

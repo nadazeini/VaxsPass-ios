@@ -11,6 +11,21 @@ import Alamofire
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
+    @IBOutlet weak var GenerateQRButton: UIButton!
+    let create_user_params : [String:Any] = [
+            "oauth": "testing",
+            "name": "test",
+            "date" : "01/01/2021",
+            "vaccine_type" : "None",
+            "taken": 0,
+            "completed": false
+    ]
+    @IBAction func GenerateQRCode(_ sender: Any) {
+        AF.request("https://glacial-inlet-64915.herokuapp.com/create-user", method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+            }
+    }
     let image = UIImagePickerController()
     
     

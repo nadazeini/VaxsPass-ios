@@ -116,7 +116,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                         completed = true
                     }
                     let vaccine_type = results?.annotations.moderna == true ? "Moderna" : "Pfizer"
-                    let date = "soon"
+                    let date = "12/30/2020"
                     self.create_user_params.updateValue(doses, forKey: "taken")
                     self.create_user_params.updateValue(vaccine_type , forKey: "vaccine_type")
                     self.create_user_params.updateValue(completed, forKey: "completed")

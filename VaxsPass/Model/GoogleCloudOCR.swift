@@ -33,27 +33,23 @@ class GoogleCloudOCR {
                     ],
                     "features": [
                         [
-                            "type": "DOCUMENT_TEXT_DETECTION"
+                            "type": "TEXT_DETECTION"
                         ]
                     ]
                 ]
             ]
         ]
         let headers: HTTPHeaders = [
-            "X-Ios-Bundle-Identifier": Bundle.main.bundleIdentifier ?? "",
+            "X-Ios-Bundle-Identifier": Bundle.main.bundleIdentifier ?? ""
         ]
-        AF.request(apiURL,method: .post,parameters: parameters,encoding: JSONEncoding.default,headers: headers).responseJSON { response in
-                switch response.result {
-                case .failure(let error):
-                    print("Error")
-                    print(error)
-                    completion(nil)
-                
-                case .success(let sucess):
-//                    completion(sucess as! OCRResult)
-                    print(sucess)
+        AF.request(apiURL,method: .post,parameters: parameters,encoding: JSONEncoding.default,headers: headers).responseData { (response) in
+            if let safeData = response.data {
+                if let ocrResponse = try? JSONDecoder().decode(GoogleCloudOCRResponse.self, from: safeData){
+                    completion(ocrResponse.responses[0])
                 }
             }
+            
+        }
     }
     
     private func base64EncodeImage(_ image: UIImage) -> String? {

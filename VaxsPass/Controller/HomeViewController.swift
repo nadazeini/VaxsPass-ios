@@ -50,7 +50,9 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         if let userImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             DispatchQueue.main.async {
                 self.googleTextRec.detect(from: userImage) { (results) in
-                    print(results?.annotations[0].text)
+                    print(results?.annotations.count)
+                    print(results?.annotations.moderna)
+                    print(results?.annotations.pfizer)
                 }
             }
         }

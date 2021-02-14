@@ -64,7 +64,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test2@hello.com" placeholder=" Email" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-Y9-dfr" customClass="VaxTextField" customModule="VaxsPass" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="something@test.com" placeholder=" Email" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-Y9-dfr" customClass="VaxTextField" customModule="VaxsPass" customModuleProvider="target">
                                 <rect key="frame" x="22" y="518" width="346" height="54"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>

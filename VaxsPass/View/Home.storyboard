@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="22p-pk-rYs">
             <objects>
                 <viewController id="fZx-KB-T9Q" customClass="HomeViewController" customModule="VaxsPass" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,14 +42,14 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-th-C4a">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-th-C4a" customClass="VaxImageVIew" customModule="VaxsPass" customModuleProvider="target">
                                 <rect key="frame" x="39" y="155.33333333333337" width="312" height="300"/>
                                 <color key="backgroundColor" red="0.92837578060000003" green="0.92850917580000003" blue="0.9283465743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Wgt-MX-um2"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-ML-JJA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-ML-JJA" customClass="VaxButton" customModule="VaxsPass" customModuleProvider="target">
                                 <rect key="frame" x="39" y="155.33333333333337" width="312" height="300"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -98,7 +98,9 @@
                             <constraint firstItem="KYl-CO-sMT" firstAttribute="trailing" secondItem="vqe-th-C4a" secondAttribute="trailing" constant="39" id="zkD-a1-GKp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Dlg-Hb-xHb"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="Dlg-Hb-xHb">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addDocumentsButton" destination="rgc-ML-JJA" id="4Uq-ru-qW4"/>
@@ -112,8 +114,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="camera.on.rectangle.fill" catalog="system" width="32" height="32"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="profile" width="52" height="52"/>
         <image name="qrcode" width="300" height="300"/>
         <systemColor name="labelColor">

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.0'
 
 target 'VaxsPass' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,9 +7,7 @@ target 'VaxsPass' do
 
   # Pods for VaxsPass
 pod 'ArcGIS-Runtime-SDK-iOS', '100.10' 
-pod 'GoogleMaps'
 pod 'GooglePlaces'
-pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'

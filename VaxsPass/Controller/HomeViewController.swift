@@ -70,8 +70,15 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
 """
             let parameters = json.data(using: .utf8)!
             let result = AF.request("https://vision.googleapis.com/v1/images:annotate", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers)
-            print(result.data)
+            print(result.data as Any)
         }
+    }
+    
+    @IBAction func GenerateQRCode(_ sender: Any) {
+        AF.request("https://glacial-inlet-64915.herokuapp.com/create-user", method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+            }
     }
     
     @IBAction func addDocumentsPressed(_ sender: UIButton) {

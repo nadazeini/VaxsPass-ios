@@ -39,7 +39,6 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
 //                print(json["encode"] ?? "no response")
 //                print(json["txid"] ?? "no response")
                 if(json["status"] as! String  == "Success"){
-                    print("equal \(json["status"].debugDescription)")
                     //generate qr code here on
                     let passUrl = "https://glacial-inlet-64915.herokuapp.com/index.html?oauth=\(self.create_user_params["oauth"] ?? "")"
                     let stringData = passUrl.data(using: .utf8)

@@ -164,8 +164,6 @@
 			buildConfigurationList = FA043CFD25D784B800CB8078 /* Build configuration list for PBXNativeTarget "VaxsPass" */;
 			buildPhases = (
 				500D732A06660EB7FFDE258A /* [CP] Check Pods Manifest.lock */,
-				E98E51147F380A1DD2936E81 /* [CP] Prepare Artifacts */,
-				7092D6DD63814BA9E8A22D24 /* [CP] Prepare Artifacts */,
 				FA043CE525D784B500CB8078 /* Sources */,
 				FA043CE625D784B500CB8078 /* Frameworks */,
 				FA043CE725D784B500CB8078 /* Resources */,
@@ -302,23 +300,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E98E51147F380A1DD2936E81 /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Prepare Artifacts";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

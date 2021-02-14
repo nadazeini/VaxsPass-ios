@@ -10,7 +10,6 @@ import GooglePlaces
 import Firebase
 //import FirebaseDatabase
 import IQKeyboardManagerSwift
-import ApiAI
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -20,11 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
-        // Dialogflow setup
-        let configuration = AIDefaultConfiguration()
-        configuration.clientAccessToken = "AIzaSyA44UP8sSTsX3yLcaYQFOaaUGIgrBaVOws"
-        let apiai = ApiAI.shared()
-        apiai?.configuration = configuration
+
 //        var ref: DatabaseReference!
 //        ref = Database.database().reference().ref.child("userInfo")
         //realtime db setup

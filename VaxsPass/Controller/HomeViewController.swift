@@ -74,12 +74,12 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         }
     }
     
-    @IBAction func GenerateQRCode(_ sender: Any) {
-        AF.request("https://glacial-inlet-64915.herokuapp.com/create-user", method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
-            .responseJSON { response in
-                print(response)
-            }
-    }
+//    @IBAction func GenerateQRCode(_ sender: Any) {
+//        AF.request("https://glacial-inlet-64915.herokuapp.com/create-user", method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
+//            .responseJSON { response in
+//                print(response)
+//            }
+//    }
     
     @IBAction func addDocumentsPressed(_ sender: UIButton) {
         let alert = UIAlertController(title: "Choose a Source", message: "From where would you like to add the document?", preferredStyle: .actionSheet)

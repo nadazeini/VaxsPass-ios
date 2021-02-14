@@ -374,6 +374,7 @@ DEPENDENCIES:
   - ArcGIS-Runtime-SDK-iOS (= 100.10)
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
   - Firebase/Firestore
   - GooglePlaces
   - IQKeyboardManagerSwift

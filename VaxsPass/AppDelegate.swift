@@ -8,14 +8,14 @@
 import UIKit
 import GooglePlaces
 import Firebase
+//import FirebaseDatabase
 import IQKeyboardManagerSwift
 import ApiAI
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        AGSArcGISRuntimeEnvironment.apiKey = "AAPK175781fbc4044b99bdd35a4347bde45deU7VJt25W0DC6qG3IzlX5lA5rmj7sC2ABbqcgdaA3iAF84u66vrhW6Wc4nt7KUXd"
-       
+        //should hide keys lol
+        
         GMSPlacesClient.provideAPIKey("AIzaSyARNJeV0HUI1CcAVuKN6VQ__PwET2KZ6Rc")
         // Override point for customization after application launch.
         FirebaseApp.configure()
@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        var ref: DatabaseReference!
 //        ref = Database.database().reference().ref.child("userInfo")
         //realtime db setup
+        
         return true
     }
 

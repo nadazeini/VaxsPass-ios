@@ -10,6 +10,7 @@ import ArcGIS
 import GooglePlaces
 import Firebase
 import IQKeyboardManagerSwift
+import ApiAI
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
+        // Dialogflow setup
+        let configuration = AIDefaultConfiguration()
+        configuration.clientAccessToken = "AIzaSyA44UP8sSTsX3yLcaYQFOaaUGIgrBaVOws"
+        let apiai = ApiAI.shared()
+        apiai?.configuration = configuration
         return true
     }
 

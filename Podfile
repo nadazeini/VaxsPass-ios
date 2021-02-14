@@ -13,4 +13,5 @@ pod 'Firebase/Core'
 pod 'Firebase/Firestore'
 pod 'IQKeyboardManagerSwift'
 pod 'Alamofire'
+pod 'ApiAI'
 end

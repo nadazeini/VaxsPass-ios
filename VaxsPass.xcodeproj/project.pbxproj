@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C60B06CDE0FF0FC10FD9E22 /* Pods_VaxsPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E3749A4D2C9E22A358CCD2 /* Pods_VaxsPass.framework */; };
+		E93EEA8D25D90654008FDCA1 /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93EEA8C25D90654008FDCA1 /* ChatbotViewController.swift */; };
 		FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CEC25D784B500CB8078 /* AppDelegate.swift */; };
 		FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043CEE25D784B500CB8078 /* SceneDelegate.swift */; };
 		FA043CF425D784B500CB8078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA043CF225D784B500CB8078 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		416F149E41CECFEF3F764748 /* Pods-VaxsPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.release.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.release.xcconfig"; sourceTree = "<group>"; };
 		B36DA30633B943B103C74350 /* Pods-VaxsPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxsPass.debug.xcconfig"; path = "Target Support Files/Pods-VaxsPass/Pods-VaxsPass.debug.xcconfig"; sourceTree = "<group>"; };
 		D3E3749A4D2C9E22A358CCD2 /* Pods_VaxsPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxsPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E93EEA8C25D90654008FDCA1 /* ChatbotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
 		FA043CE925D784B500CB8078 /* VaxsPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaxsPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA043CEC25D784B500CB8078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA043CEE25D784B500CB8078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				FF0F546525D7D10A002C39B6 /* SignInViewController.swift */,
 				FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */,
 				FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */,
+				E93EEA8C25D90654008FDCA1 /* ChatbotViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			buildConfigurationList = FA043CFD25D784B800CB8078 /* Build configuration list for PBXNativeTarget "VaxsPass" */;
 			buildPhases = (
 				500D732A06660EB7FFDE258A /* [CP] Check Pods Manifest.lock */,
+				E98E51147F380A1DD2936E81 /* [CP] Prepare Artifacts */,
 				FA043CE525D784B500CB8078 /* Sources */,
 				FA043CE625D784B500CB8078 /* Frameworks */,
 				FA043CE725D784B500CB8078 /* Resources */,
@@ -282,6 +286,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E98E51147F380A1DD2936E81 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -289,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93EEA8D25D90654008FDCA1 /* ChatbotViewController.swift in Sources */,
 				FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
 				FA043D1425D7BC4000CB8078 /* Models.swift in Sources */,

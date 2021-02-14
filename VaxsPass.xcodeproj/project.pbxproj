@@ -24,6 +24,8 @@
 		FF0F546625D7D10A002C39B6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F546525D7D10A002C39B6 /* SignInViewController.swift */; };
 		FF3CF6E425D8033A0002142B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3CF6E325D8033A0002142B /* Home.storyboard */; };
 		FF3CF7A925D8681E0002142B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CF7A825D8681E0002142B /* HomeViewController.swift */; };
+		FF3CF88025D8F2750002142B /* GoogleCloudOCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CF87F25D8F2740002142B /* GoogleCloudOCR.swift */; };
+		FF3CF88625D8F7710002142B /* GoogleCloudOCRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CF88525D8F7700002142B /* GoogleCloudOCRModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		FF0F546525D7D10A002C39B6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF3CF6E325D8033A0002142B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FF3CF7A825D8681E0002142B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF3CF87F25D8F2740002142B /* GoogleCloudOCR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCloudOCR.swift; sourceTree = "<group>"; };
+		FF3CF88525D8F7700002142B /* GoogleCloudOCRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCloudOCRModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			children = (
 				FA043D6725D84C5800CB8078 /* MapMarker.swift */,
 				FA043D1325D7BC4000CB8078 /* Models.swift */,
+				FF3CF87F25D8F2740002142B /* GoogleCloudOCR.swift */,
+				FF3CF88525D8F7700002142B /* GoogleCloudOCRModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 				FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */,
 				FF0F546625D7D10A002C39B6 /* SignInViewController.swift in Sources */,
+				FF3CF88025D8F2750002142B /* GoogleCloudOCR.swift in Sources */,
+				FF3CF88625D8F7710002142B /* GoogleCloudOCRModel.swift in Sources */,
 				FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */,
 				FF3CF7A925D8681E0002142B /* HomeViewController.swift in Sources */,
 			);
@@ -464,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YJ5XVX3PL;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = VaxsPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YJ5XVX3PL;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = VaxsPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

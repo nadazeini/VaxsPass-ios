@@ -18,6 +18,7 @@
 		FA043D1425D7BC4000CB8078 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D1325D7BC4000CB8078 /* Models.swift */; };
 		FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D6725D84C5800CB8078 /* MapMarker.swift */; };
 		FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */; };
+		FA54869925D937A1003635B9 /* FirebaseReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54869825D937A1003635B9 /* FirebaseReferences.swift */; };
 		FF072BDE25D78E7800C299ED /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF072BDD25D78E7800C299ED /* Auth.storyboard */; };
 		FF072BE325D7AC4200C299ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */; };
 		FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF072BF125D7AE1E00C299ED /* SignUpViewController.swift */; };
@@ -42,6 +43,7 @@
 		FA043D1325D7BC4000CB8078 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		FA043D6725D84C5800CB8078 /* MapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
 		FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewController.swift; sourceTree = "<group>"; };
+		FA54869825D937A1003635B9 /* FirebaseReferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReferences.swift; sourceTree = "<group>"; };
 		FF072BDD25D78E7800C299ED /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		FF072BE225D7AC4200C299ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF072BF125D7AE1E00C299ED /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		FA043CEB25D784B500CB8078 /* VaxsPass */ = {
 			isa = PBXGroup;
 			children = (
+				FA54869725D9378E003635B9 /* Network */,
 				FA043CEC25D784B500CB8078 /* AppDelegate.swift */,
 				FA043CEE25D784B500CB8078 /* SceneDelegate.swift */,
 				FF3CF7FC25D8EC360002142B /* Model */,
@@ -118,6 +121,14 @@
 			children = (
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		FA54869725D9378E003635B9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA54869825D937A1003635B9 /* FirebaseReferences.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		FF0F547D25D7D41B002C39B6 /* Controller */ = {
@@ -313,6 +324,7 @@
 				FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 				FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */,
+				FA54869925D937A1003635B9 /* FirebaseReferences.swift in Sources */,
 				FF0F546625D7D10A002C39B6 /* SignInViewController.swift in Sources */,
 				FF072BF225D7AE1E00C299ED /* SignUpViewController.swift in Sources */,
 				FF3CF7A925D8681E0002142B /* HomeViewController.swift in Sources */,

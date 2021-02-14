@@ -135,7 +135,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="bgb-Y9-dfr" id="feC-7O-Gnz"/>
                         <outlet property="passwordTextField" destination="mML-Ll-qKm" id="gTA-Li-gDC"/>
-                        <segue destination="NQQ-Mr-XVp" kind="show" identifier="home" id="xTn-Gw-xuC"/>
+                        <segue destination="NQQ-Mr-XVp" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="ow9-5G-rdq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thx-vh-SHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,7 +150,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXD-M0-y22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1614" y="343"/>
+            <point key="canvasLocation" x="1668" y="424"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6O1-h2-jbs">

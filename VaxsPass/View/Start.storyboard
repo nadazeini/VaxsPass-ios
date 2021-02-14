@@ -8,37 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MapViewController-->
-        <scene sceneID="pyA-7K-pHC">
-            <objects>
-                <viewController title="MapViewController" id="fmw-OJ-JRk" customClass="MapViewController" customModule="VaxsPass" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jw8-Nf-8zw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiT-7e-eHm" customClass="AGSMapView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="abf-Br-fhB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="hiT-7e-eHm" firstAttribute="top" secondItem="abf-Br-fhB" secondAttribute="top" id="NXh-P8-83v"/>
-                            <constraint firstItem="abf-Br-fhB" firstAttribute="bottom" secondItem="hiT-7e-eHm" secondAttribute="bottom" id="fSf-4j-T3T"/>
-                            <constraint firstItem="abf-Br-fhB" firstAttribute="trailing" secondItem="hiT-7e-eHm" secondAttribute="trailing" id="mJa-rg-M1E"/>
-                            <constraint firstItem="hiT-7e-eHm" firstAttribute="leading" secondItem="abf-Br-fhB" secondAttribute="leading" id="yVl-9l-d4q"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="EZh-Zs-XX5"/>
-                    <connections>
-                        <outlet property="mapView" destination="hiT-7e-eHm" id="E9q-Fg-8TW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Moc-kx-lYY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2468" y="709"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="o5r-aA-MWN">
             <objects>
@@ -53,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fnm-em-a5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2423.1884057971015" y="83.705357142857139"/>
+            <point key="canvasLocation" x="687" y="109"/>
         </scene>
         <!--Home-->
         <scene sceneID="Jvw-qp-fFc">
@@ -64,7 +33,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6w-BT-XNi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="-483"/>
+            <point key="canvasLocation" x="690" y="-978"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MrB-tJ-fE2">
@@ -80,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZO4-yC-C9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="732"/>
+            <point key="canvasLocation" x="688" y="-562"/>
         </scene>
         <!--LocationInfoViewController-->
         <scene sceneID="FO4-dX-tC9">
@@ -109,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlL-rX-0p0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1901" y="-115"/>
+            <point key="canvasLocation" x="2062" y="771"/>
         </scene>
         <!--GoogleMapsViewController-->
         <scene sceneID="Aux-3s-3DM">
@@ -119,22 +88,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hwt-sL-YQt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hwt-sL-YQt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uak-CM-Jsv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Uak-CM-Jsv" firstAttribute="bottom" secondItem="hwt-sL-YQt" secondAttribute="bottom" id="19y-KK-efM"/>
-                            <constraint firstItem="hwt-sL-YQt" firstAttribute="top" secondItem="Uak-CM-Jsv" secondAttribute="top" id="3tS-Qz-rSI"/>
-                            <constraint firstItem="hwt-sL-YQt" firstAttribute="bottom" secondItem="Uak-CM-Jsv" secondAttribute="bottom" id="BN9-pP-rHf"/>
-                            <constraint firstItem="hwt-sL-YQt" firstAttribute="top" secondItem="Uak-CM-Jsv" secondAttribute="top" id="IvP-DJ-9ZT"/>
-                            <constraint firstItem="Uak-CM-Jsv" firstAttribute="bottom" secondItem="hwt-sL-YQt" secondAttribute="bottom" id="M6y-ZD-n44"/>
-                            <constraint firstItem="hwt-sL-YQt" firstAttribute="leading" secondItem="Uak-CM-Jsv" secondAttribute="leading" id="cSc-I4-UfL"/>
-                            <constraint firstItem="hwt-sL-YQt" firstAttribute="leading" secondItem="Uak-CM-Jsv" secondAttribute="leading" id="clf-MV-IJw"/>
-                            <constraint firstItem="hwt-sL-YQt" firstAttribute="trailing" secondItem="Uak-CM-Jsv" secondAttribute="trailing" id="fao-Vm-OPR"/>
-                            <constraint firstItem="Uak-CM-Jsv" firstAttribute="trailing" secondItem="hwt-sL-YQt" secondAttribute="trailing" id="o9C-c9-vJB"/>
+                            <constraint firstAttribute="bottom" secondItem="hwt-sL-YQt" secondAttribute="bottom" id="Ex7-Ml-tnS"/>
+                            <constraint firstItem="hwt-sL-YQt" firstAttribute="trailing" secondItem="Uak-CM-Jsv" secondAttribute="trailing" id="Zkh-XG-4pH"/>
+                            <constraint firstItem="hwt-sL-YQt" firstAttribute="leading" secondItem="Uak-CM-Jsv" secondAttribute="leading" id="u9Q-Bg-Rd1"/>
+                            <constraint firstItem="hwt-sL-YQt" firstAttribute="top" secondItem="FLJ-Iq-BYm" secondAttribute="top" id="wGO-hU-fvD"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="location.circle" catalog="system" id="R88-uR-Zey"/>
@@ -145,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9s-zN-sbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-903" y="587"/>
+            <point key="canvasLocation" x="687" y="771"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rZv-MM-xNx">
@@ -165,25 +129,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyD-Fp-Uc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-352" y="-219"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ntl-i0-xEh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="R4Q-YX-gHz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="location.circle" catalog="system" id="xhI-sh-3mD"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TBy-A6-KNf">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fmw-OJ-JRk" kind="relationship" relationship="rootViewController" id="s1q-Ja-hzZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="puo-mh-oXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1559" y="772"/>
+            <point key="canvasLocation" x="-1241" y="-398"/>
         </scene>
     </scenes>
     <resources>

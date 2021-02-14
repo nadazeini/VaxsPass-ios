@@ -73,11 +73,9 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                         self.addDocumentsButton.isHidden = true
                         self.alert.dismiss(animated: true, completion: nil)
                     }
-                    registered = true
                 }
             }
         })
-        return registered
     }
     func postRequest(url: String,parameters:[String:Any],completion : @escaping (Any) -> Void){
         AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)

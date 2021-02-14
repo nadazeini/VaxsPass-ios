@@ -28,6 +28,9 @@
 		FF3CF88025D8F2750002142B /* GoogleCloudOCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CF87F25D8F2740002142B /* GoogleCloudOCR.swift */; };
 		FF3CF88625D8F7710002142B /* GoogleCloudOCRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CF88525D8F7700002142B /* GoogleCloudOCRModel.swift */; };
 		FFE7C77725D938AF00ACEBA6 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7C77625D938AF00ACEBA6 /* StringExtension.swift */; };
+		FFE7C79825D95F0F00ACEBA6 /* VaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7C79725D95F0F00ACEBA6 /* VaxView.swift */; };
+		FFE7C79B25D95F7600ACEBA6 /* VaxTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7C79A25D95F7600ACEBA6 /* VaxTextField.swift */; };
+		FFE7C79E25D9603600ACEBA6 /* VaxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7C79D25D9603600ACEBA6 /* VaxButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		FF3CF87F25D8F2740002142B /* GoogleCloudOCR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCloudOCR.swift; sourceTree = "<group>"; };
 		FF3CF88525D8F7700002142B /* GoogleCloudOCRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCloudOCRModel.swift; sourceTree = "<group>"; };
 		FFE7C77625D938AF00ACEBA6 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FFE7C79725D95F0F00ACEBA6 /* VaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxView.swift; sourceTree = "<group>"; };
+		FFE7C79A25D95F7600ACEBA6 /* VaxTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxTextField.swift; sourceTree = "<group>"; };
+		FFE7C79D25D9603600ACEBA6 /* VaxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,9 @@
 				FF0F546525D7D10A002C39B6 /* SignInViewController.swift */,
 				FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */,
 				FA043D6A25D8560F00CB8078 /* LocationInfoViewController.swift */,
+				FFE7C79725D95F0F00ACEBA6 /* VaxView.swift */,
+				FFE7C79A25D95F7600ACEBA6 /* VaxTextField.swift */,
+				FFE7C79D25D9603600ACEBA6 /* VaxButton.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,9 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE7C79825D95F0F00ACEBA6 /* VaxView.swift in Sources */,
 				FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
+				FFE7C79B25D95F7600ACEBA6 /* VaxTextField.swift in Sources */,
 				FA043D1425D7BC4000CB8078 /* Models.swift in Sources */,
+				FFE7C79E25D9603600ACEBA6 /* VaxButton.swift in Sources */,
 				FA043D6825D84C5900CB8078 /* MapMarker.swift in Sources */,
 				FA043CEF25D784B500CB8078 /* SceneDelegate.swift in Sources */,
 				FA043D6B25D8560F00CB8078 /* LocationInfoViewController.swift in Sources */,

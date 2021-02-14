@@ -12,10 +12,14 @@ import Firebase
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     let userID = Auth.auth().currentUser?.uid
-    @IBOutlet weak var addDocumentsButton: UIButton!
+
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var imgQRCode: UIImageView!
+    @IBOutlet var addDocumentsButton: UIButton!
+    
     var qrcodeImage: CIImage!
+    let create_user_url = "https://glacial-inlet-64915.herokuapp.com/create-user"
+    let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
     var create_user_params : [String:Any] = [
         "oauth": "",
         "name": "test123", //need to update name to the one from firebase
@@ -42,33 +46,10 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         image.allowsEditing = false
         self.create_user_params.updateValue(self.userID ?? "", forKey: "oauth")
     }
-    let create_user_url = "https://glacial-inlet-64915.herokuapp.com/create-user"
-    @IBAction func GenerateQRCode(_ sender: Any) {
-        self.postRequest(url:create_user_url, parameters: self.create_user_params , completion: {response in
-                    print("done calling")
-            self.addDocumentsButton.isHidden = true
-            self.addDocumentsButton.isEnabled = false
-            if let json = response as? Dictionary<String,AnyObject> {
-//                print(json["status"] ?? "no response")
-//                print(json["encode"] ?? "no response")
-//                print(json["txid"] ?? "no response")
-                if(json["status"] as! String  == "Success"){
-                    //generate qr code here on
-                    let passUrl = "https://glacial-inlet-64915.herokuapp.com/index.html?oauth=\(self.create_user_params["oauth"] ?? "")"
-                    let stringData = passUrl.data(using: .utf8)
-                    if self.qrcodeImage == nil {
-                        let filter = CIFilter(name: "CIQRCodeGenerator")
-                        filter?.setValue(stringData, forKey: "inputMessage")
-                        filter?.setValue("Q", forKey: "inputCorrectionLevel")
-                        self.qrcodeImage = filter?.outputImage
-                        self.imgQRCode.image = UIImage(ciImage: self.qrcodeImage)
-                    }
-                }
-            }
-        })
-    }
-    func sendRequestAndGenerateQRCode() -> Bool{
-        var registered : Bool = false
+    
+   
+    func sendRequestAndGenerateQRCode(){
+        
         self.postRequest(url:create_user_url, parameters: self.create_user_params , completion: {response in
                     print("done calling")
             if let json = response as? Dictionary<String,AnyObject> {
@@ -85,12 +66,13 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                         filter?.setValue("Q", forKey: "inputCorrectionLevel")
                         self.qrcodeImage = filter?.outputImage
                         self.imgQRCode.image = UIImage(ciImage: self.qrcodeImage)
+                        
+                        self.addDocumentsButton.isHidden = true
+                        self.alert.dismiss(animated: true, completion: nil)
                     }
-                    registered = true
                 }
             }
         })
-        return registered
     }
     func postRequest(url: String,parameters:[String:Any],completion : @escaping (Any) -> Void){
         AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
@@ -100,6 +82,8 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                 } else {
                     print("failed")
                     print(response)
+                    self.alert.dismiss(animated: true, completion: nil)
+                    self.showError()
                     completion(response.value)
                 }
             }
@@ -109,6 +93,17 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let userImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            
+            image.dismiss(animated: true, completion: nil)
+            
+            let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+            loadingIndicator.hidesWhenStopped = true
+            loadingIndicator.style = UIActivityIndicatorView.Style.large
+            loadingIndicator.startAnimating();
+
+            alert.view.addSubview(loadingIndicator)
+            present(alert, animated: true, completion: nil)
+            
             DispatchQueue.main.async {
                 self.googleTextRec.detect(from: userImage) { (results) in
                     let doses:Int = (results?.annotations.count)!
@@ -123,13 +118,13 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                     self.create_user_params.updateValue(completed, forKey: "completed")
                     self.create_user_params.updateValue(date, forKey: "date")
                     print(self.create_user_params)
-                    if(self.sendRequestAndGenerateQRCode() == true){
-                        
-                    }
+                    
+                    self.sendRequestAndGenerateQRCode()
                 }
             }
+            
         }
-        image.dismiss(animated: true, completion: nil)
+        
     }
     
     @IBAction func addDocumentsPressed(_ sender: UIButton) {
@@ -146,5 +141,11 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         present(alert, animated: true)
+    }
+    
+    func showError(){
+        let alert = UIAlertController(title: nil, message: "An Error Occured", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }

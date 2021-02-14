@@ -181,7 +181,6 @@
 			buildConfigurationList = FA043CFD25D784B800CB8078 /* Build configuration list for PBXNativeTarget "VaxsPass" */;
 			buildPhases = (
 				500D732A06660EB7FFDE258A /* [CP] Check Pods Manifest.lock */,
-				1890F30CCFB0657CE56B3773 /* [CP] Prepare Artifacts */,
 				FA043CE525D784B500CB8078 /* Sources */,
 				FA043CE625D784B500CB8078 /* Frameworks */,
 				FA043CE725D784B500CB8078 /* Resources */,
@@ -247,23 +246,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1890F30CCFB0657CE56B3773 /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Prepare Artifacts";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxsPass/Pods-VaxsPass-artifacts.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3EC46686D2CDF2D1F5885063 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,7 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YJ5XVX3PL;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = VaxsPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,7 +491,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YJ5XVX3PL;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = VaxsPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

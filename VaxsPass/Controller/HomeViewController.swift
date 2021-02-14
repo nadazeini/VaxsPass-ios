@@ -12,6 +12,7 @@ import Alamofire
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     @IBOutlet weak var GenerateQRButton: UIButton!
+    
     let create_user_params : [String:Any] = [
             "oauth": "testing",
             "name": "test",
@@ -20,16 +21,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
             "taken": 0,
             "completed": false
     ]
-    @IBAction func GenerateQRCode(_ sender: Any) {
-        AF.request("https://glacial-inlet-64915.herokuapp.com/create-user", method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
-            .responseJSON { response in
-                print(response)
-            }
-    }
     let image = UIImagePickerController()
-    
-    
-    
     let headers: HTTPHeaders = [
         "Authorization": "Bearer AIzaSyBZZOFM9otkX6J0NsDtDoNyNybY3HG7xeE",
         "Content-Type": "application/json; charset=utf-8"
@@ -64,6 +56,13 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
             let result = AF.request("https://vision.googleapis.com/v1/images:annotate", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers)
             print(result.data as Any)
         }
+    }
+    
+    @IBAction func GenerateQRCode(_ sender: Any) {
+        AF.request("https://glacial-inlet-64915.herokuapp.com/create-user", method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+            }
     }
     
     @IBAction func addDocumentsPressed(_ sender: UIButton) {

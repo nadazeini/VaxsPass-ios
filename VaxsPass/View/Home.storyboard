@@ -70,6 +70,9 @@
                                 <state key="normal" title="Generate QR Code (Test)">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="GenerateQRCode:" destination="fZx-KB-T9Q" eventType="touchUpInside" id="NAS-Jx-oZt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KYl-CO-sMT"/>
@@ -88,6 +91,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Dlg-Hb-xHb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="GenerateQRButton" destination="rpt-ra-hQZ" id="INl-LA-LTn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Hb-gC-A01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

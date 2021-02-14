@@ -65,31 +65,97 @@
                                     <action selector="addDocumentsPressed:" destination="fZx-KB-T9Q" eventType="touchUpInside" id="lQT-eo-BIi"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Step 2: Documents are verified and QR code is generated" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWC-cO-JWK">
-                                <rect key="frame" x="-9" y="575" width="399" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Step 3: Show barcode to scan for verification" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wad-b5-BTd">
-                                <rect key="frame" x="39" y="639" width="319" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Step 1: Take a picture of your vaccine document or upload it " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qI-xd-u4h">
-                                <rect key="frame" x="7" y="505" width="418" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="BIX-XO-DEh">
+                                <rect key="frame" x="22" y="527" width="346" height="180"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2w-RV-Mrc">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="40.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step One" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhk-iL-MTx" customClass="VaxLabel" customModule="VaxsPass" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="83" height="40.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="83" id="Fe4-vT-qgp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a picture of your vaccine document or upload it " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7og-zl-a99" customClass="VaxLabel" customModule="VaxsPass" customModuleProvider="target">
+                                                <rect key="frame" x="83" y="0.0" width="263" height="40.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtN-Nx-PJ1">
+                                        <rect key="frame" x="0.0" y="69.666666666666629" width="346" height="40.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step Two" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukg-cm-uZK" customClass="VaxLabel" customModule="VaxsPass" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="83" height="40.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="83" id="ul3-2j-XoZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Documents are verified and QR code is generated" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQS-8X-XbU" customClass="VaxLabel" customModule="VaxsPass" customModuleProvider="target">
+                                                <rect key="frame" x="83" y="0.0" width="263" height="40.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oj5-lJ-3Hf">
+                                        <rect key="frame" x="0.0" y="139.33333333333337" width="346" height="40.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="247" verticalHuggingPriority="246" horizontalCompressionResistancePriority="745" verticalCompressionResistancePriority="742" text="Step Three" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqi-21-NFO" customClass="VaxLabel" customModule="VaxsPass" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="40.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="Z6n-Ry-2Lm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show barcode to scan for verification" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hS-9d-x6K" customClass="VaxLabel" customModule="VaxsPass" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="256" height="40.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Oj5-lJ-3Hf" secondAttribute="bottom" id="5u4-9E-Zw9"/>
+                                    <constraint firstItem="f2w-RV-Mrc" firstAttribute="top" secondItem="BIX-XO-DEh" secondAttribute="top" id="7hs-be-Puq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oj5-lJ-3Hf" secondAttribute="trailing" id="D8U-la-olK"/>
+                                    <constraint firstItem="Oj5-lJ-3Hf" firstAttribute="leading" secondItem="BIX-XO-DEh" secondAttribute="leading" id="aAB-6g-7nf"/>
+                                    <constraint firstAttribute="trailing" secondItem="f2w-RV-Mrc" secondAttribute="trailing" id="bxf-bC-X47"/>
+                                    <constraint firstItem="f2w-RV-Mrc" firstAttribute="leading" secondItem="BIX-XO-DEh" secondAttribute="leading" id="cDU-8v-4lO"/>
+                                    <constraint firstAttribute="trailing" secondItem="gtN-Nx-PJ1" secondAttribute="trailing" id="eUN-UW-UAe"/>
+                                    <constraint firstItem="gtN-Nx-PJ1" firstAttribute="leading" secondItem="BIX-XO-DEh" secondAttribute="leading" id="k9f-3a-qLk"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KYl-CO-sMT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="odd-Vc-7S3" secondAttribute="trailing" constant="20" id="0rx-9a-NOa"/>
+                            <constraint firstItem="BIX-XO-DEh" firstAttribute="top" secondItem="vqe-th-C4a" secondAttribute="bottom" constant="71.666666666666629" id="AeH-z3-2rA"/>
                             <constraint firstItem="rgc-ML-JJA" firstAttribute="top" secondItem="odd-Vc-7S3" secondAttribute="bottom" constant="17" id="MAU-56-5yh"/>
                             <constraint firstItem="vqe-th-C4a" firstAttribute="leading" secondItem="KYl-CO-sMT" secondAttribute="leading" constant="39" id="Xrt-uV-aHp"/>
+                            <constraint firstItem="BIX-XO-DEh" firstAttribute="leading" secondItem="KYl-CO-sMT" secondAttribute="leading" constant="22" id="ZDN-51-OUN"/>
+                            <constraint firstItem="KYl-CO-sMT" firstAttribute="trailing" secondItem="BIX-XO-DEh" secondAttribute="trailing" constant="22" id="brA-v8-iP9"/>
                             <constraint firstItem="odd-Vc-7S3" firstAttribute="leading" secondItem="KYl-CO-sMT" secondAttribute="leading" constant="20" id="cg6-ys-ReA"/>
                             <constraint firstItem="odd-Vc-7S3" firstAttribute="top" secondItem="KYl-CO-sMT" secondAttribute="top" constant="10" id="eiK-iq-mdd"/>
                             <constraint firstItem="rgc-ML-JJA" firstAttribute="leading" secondItem="KYl-CO-sMT" secondAttribute="leading" constant="39" id="iYn-6j-h8d"/>
@@ -126,6 +192,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

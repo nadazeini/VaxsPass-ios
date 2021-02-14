@@ -33,6 +33,7 @@
 		FFE7C79B25D95F7600ACEBA6 /* VaxTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7C79A25D95F7600ACEBA6 /* VaxTextField.swift */; };
 		FFE7C79E25D9603600ACEBA6 /* VaxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7C79D25D9603600ACEBA6 /* VaxButton.swift */; };
 		FFE7C7BC25D96A2500ACEBA6 /* VaxImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7C7BB25D96A2500ACEBA6 /* VaxImageVIew.swift */; };
+		FFE7C7E025D99B4300ACEBA6 /* VaxLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7C7DF25D99B4300ACEBA6 /* VaxLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		FFE7C79A25D95F7600ACEBA6 /* VaxTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxTextField.swift; sourceTree = "<group>"; };
 		FFE7C79D25D9603600ACEBA6 /* VaxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxButton.swift; sourceTree = "<group>"; };
 		FFE7C7BB25D96A2500ACEBA6 /* VaxImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxImageVIew.swift; sourceTree = "<group>"; };
+		FFE7C7DF25D99B4300ACEBA6 /* VaxLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaxLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				FFE7C79A25D95F7600ACEBA6 /* VaxTextField.swift */,
 				FFE7C79D25D9603600ACEBA6 /* VaxButton.swift */,
 				FFE7C7BB25D96A2500ACEBA6 /* VaxImageVIew.swift */,
+				FFE7C7DF25D99B4300ACEBA6 /* VaxLabel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				E93EEA8D25D90654008FDCA1 /* ChatbotViewController.swift in Sources */,
 				FFE7C79825D95F0F00ACEBA6 /* VaxView.swift in Sources */,
 				FA043D0C25D7A35300CB8078 /* GoogleMapsViewController.swift in Sources */,
+				FFE7C7E025D99B4300ACEBA6 /* VaxLabel.swift in Sources */,
 				FA043CED25D784B500CB8078 /* AppDelegate.swift in Sources */,
 				FFE7C79B25D95F7600ACEBA6 /* VaxTextField.swift in Sources */,
 				FA043D1425D7BC4000CB8078 /* Models.swift in Sources */,

@@ -12,12 +12,12 @@ import Firebase
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     let userID = Auth.auth().currentUser?.uid
+    @IBOutlet weak var addDocumentsButton: UIButton!
     @IBOutlet weak var imgQRCode: UIImageView!
-    @IBOutlet weak var GenerateQRButton: UIButton!
     var qrcodeImage: CIImage!
     var create_user_params : [String:Any] = [
         "oauth": "",
-        "name": "test123",
+        "name": "test123", //need to update name to the one from firebase
         "date" : "01/01/2021",
         "vaccine_type" : "None",
         "taken": 1,
@@ -34,6 +34,8 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
     @IBAction func GenerateQRCode(_ sender: Any) {
         self.postRequest(url:create_user_url, parameters: self.create_user_params , completion: {response in
                     print("done calling")
+            self.addDocumentsButton.isHidden = true
+            self.addDocumentsButton.isEnabled = false
             if let json = response as? Dictionary<String,AnyObject> {
 //                print(json["status"] ?? "no response")
 //                print(json["encode"] ?? "no response")
@@ -52,6 +54,31 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                 }
             }
         })
+    }
+    func sendRequestAndGenerateQRCode() -> Bool{
+        var registered : Bool = false
+        self.postRequest(url:create_user_url, parameters: self.create_user_params , completion: {response in
+                    print("done calling")
+            if let json = response as? Dictionary<String,AnyObject> {
+//                print(json["status"] ?? "no response")
+//                print(json["encode"] ?? "no response")
+//                print(json["txid"] ?? "no response")
+                if(json["status"] as! String  == "Success"){
+                    //generate qr code here on
+                    let passUrl = "https://glacial-inlet-64915.herokuapp.com/index.html?oauth=\(self.create_user_params["oauth"] ?? "")"
+                    let stringData = passUrl.data(using: .utf8)
+                    if self.qrcodeImage == nil {
+                        let filter = CIFilter(name: "CIQRCodeGenerator")
+                        filter?.setValue(stringData, forKey: "inputMessage")
+                        filter?.setValue("Q", forKey: "inputCorrectionLevel")
+                        self.qrcodeImage = filter?.outputImage
+                        self.imgQRCode.image = UIImage(ciImage: self.qrcodeImage)
+                    }
+                    registered = true
+                }
+            }
+        })
+        return registered
     }
     func postRequest(url: String,parameters:[String:Any],completion : @escaping (Any) -> Void){
         AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
@@ -72,9 +99,21 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         if let userImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             DispatchQueue.main.async {
                 self.googleTextRec.detect(from: userImage) { (results) in
-                    print(results?.annotations.count)
-                    print(results?.annotations.moderna)
-                    print(results?.annotations.pfizer)
+                    let doses:Int = (results?.annotations.count)!
+                    var completed = false
+                    if(doses == 2){
+                        completed = true
+                    }
+                    let vaccine_type = results?.annotations.moderna == true ? "Moderna" : "Pfizer"
+                    let date = "soon"
+                    self.create_user_params.updateValue(doses, forKey: "taken")
+                    self.create_user_params.updateValue(vaccine_type , forKey: "vaccine_type")
+                    self.create_user_params.updateValue(completed, forKey: "completed")
+                    self.create_user_params.updateValue(date, forKey: "date")
+                    print(self.create_user_params)
+                    if(self.sendRequestAndGenerateQRCode() == true){
+                        
+                    }
                 }
             }
         }

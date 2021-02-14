@@ -46,18 +46,6 @@
                                 <rect key="frame" x="39" y="142.66666666666663" width="312" height="300"/>
                                 <color key="backgroundColor" red="0.92837578060000003" green="0.92850917580000003" blue="0.9283465743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpt-ra-hQZ">
-                                <rect key="frame" x="118" y="707" width="210" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Generate QR Code (Test)">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="GenerateQRCode:" destination="fZx-KB-T9Q" eventType="touchUpInside" id="ttZ-ct-Uir"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aua-dV-oCq">
                                 <rect key="frame" x="47" y="462" width="296" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,6 +85,7 @@
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Dlg-Hb-xHb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="addDocumentsButton" destination="rgc-ML-JJA" id="APi-LM-Yx3"/>
                         <outlet property="imgQRCode" destination="Aua-dV-oCq" id="l21-Ws-GAe"/>
                     </connections>
                 </viewController>
@@ -162,9 +151,6 @@
         <image name="qrcode" width="300" height="300"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

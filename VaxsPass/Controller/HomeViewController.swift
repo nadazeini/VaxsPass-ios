@@ -8,25 +8,32 @@
 import UIKit
 import Vision
 import Alamofire
+import Firebase
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-    
+    let userID = Auth.auth().currentUser?.uid
     @IBOutlet weak var imgQRCode: UIImageView!
     @IBOutlet weak var GenerateQRButton: UIButton!
     var qrcodeImage: CIImage!
-    let create_user_params : [String:Any] = [
-        "oauth": "test9",
+    var create_user_params : [String:Any] = [
+        "oauth": "",
         "name": "test123",
         "date" : "01/01/2021",
         "vaccine_type" : "None",
         "taken": 1,
         "completed": false
     ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        image.delegate = self
+        image.allowsEditing = false
+        self.create_user_params.updateValue(self.userID ?? "", forKey: "oauth")
+    }
     let create_user_url = "https://glacial-inlet-64915.herokuapp.com/create-user"
     @IBAction func GenerateQRCode(_ sender: Any) {
-        self.postRequest(url:create_user_url , completion: {response in
+        self.postRequest(url:create_user_url, parameters: self.create_user_params , completion: {response in
                     print("done calling")
-            
             if let json = response as? Dictionary<String,AnyObject> {
 //                print(json["status"] ?? "no response")
 //                print(json["encode"] ?? "no response")
@@ -34,7 +41,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                 if(json["status"] as! String  == "Success"){
                     print("equal \(json["status"].debugDescription)")
                     //generate qr code here on
-                    let passUrl = "https://glacial-inlet-64915.herokuapp.com/index.html?oauth=nada"
+                    let passUrl = "https://glacial-inlet-64915.herokuapp.com/index.html?oauth=\(self.create_user_params["oauth"] ?? "")"
                     let stringData = passUrl.data(using: .utf8)
                     if self.qrcodeImage == nil {
                         let filter = CIFilter(name: "CIQRCodeGenerator")
@@ -47,8 +54,8 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
             }
         })
     }
-    func postRequest(url: String,completion : @escaping (Any) -> Void){
-        AF.request(url, method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
+    func postRequest(url: String,parameters:[String:Any],completion : @escaping (Any) -> Void){
+        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { response in
                 if(response.error == nil){
                     completion(response.value)
@@ -64,12 +71,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         "Authorization": "Bearer AIzaSyBZZOFM9otkX6J0NsDtDoNyNybY3HG7xeE",
         "Content-Type": "application/json; charset=utf-8"
     ]
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        image.delegate = self
-        image.allowsEditing = false
-    }
+
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let userImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage , let base64Image = userImage.jpegData(compressionQuality: 1)?.base64EncodedString(){

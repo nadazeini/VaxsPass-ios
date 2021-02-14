@@ -15,27 +15,49 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
     @IBOutlet weak var GenerateQRButton: UIButton!
     var qrcodeImage: CIImage!
     let create_user_params : [String:Any] = [
-        "oauth": "testing123",
+        "oauth": "test9",
         "name": "test123",
         "date" : "01/01/2021",
         "vaccine_type" : "None",
         "taken": 1,
         "completed": false
     ]
+    let create_user_url = "https://glacial-inlet-64915.herokuapp.com/create-user"
     @IBAction func GenerateQRCode(_ sender: Any) {
-        AF.request("https://glacial-inlet-64915.herokuapp.com/create-user", method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
-            .responseJSON { response in
-                print(response)
+        self.postRequest(url:create_user_url , completion: {response in
+                    print("done calling")
+            
+            if let json = response as? Dictionary<String,AnyObject> {
+//                print(json["status"] ?? "no response")
+//                print(json["encode"] ?? "no response")
+//                print(json["txid"] ?? "no response")
+                if(json["status"] as! String  == "Success"){
+                    print("equal \(json["status"].debugDescription)")
+                    //generate qr code here on
+                    let passUrl = "https://glacial-inlet-64915.herokuapp.com/index.html?oauth=nada"
+                    let stringData = passUrl.data(using: .utf8)
+                    if self.qrcodeImage == nil {
+                        let filter = CIFilter(name: "CIQRCodeGenerator")
+                        filter?.setValue(stringData, forKey: "inputMessage")
+                        filter?.setValue("Q", forKey: "inputCorrectionLevel")
+                        self.qrcodeImage = filter?.outputImage
+                        self.imgQRCode.image = UIImage(ciImage: self.qrcodeImage)
+                    }
+                }
             }
-        let passUrl = "https://glacial-inlet-64915.herokuapp.com/index.html?oauth=nada"
-        let stringData = passUrl.data(using: .utf8)
-        if qrcodeImage == nil {
-            let filter = CIFilter(name: "CIQRCodeGenerator")
-            filter?.setValue(stringData, forKey: "inputMessage")
-            filter?.setValue("Q", forKey: "inputCorrectionLevel")
-            qrcodeImage = filter?.outputImage
-            imgQRCode.image = UIImage(ciImage: qrcodeImage)
-        }
+        })
+    }
+    func postRequest(url: String,completion : @escaping (Any) -> Void){
+        AF.request(url, method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                if(response.error == nil){
+                    completion(response.value)
+                } else {
+                    print("failed")
+                    print(response)
+                    completion(response.value)
+                }
+            }
     }
     let image = UIImagePickerController()
     let headers: HTTPHeaders = [
@@ -73,13 +95,6 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
             print(result.data as Any)
         }
     }
-    
-//    @IBAction func GenerateQRCode(_ sender: Any) {
-//        AF.request("https://glacial-inlet-64915.herokuapp.com/create-user", method: .post, parameters: create_user_params, encoding: JSONEncoding.default)
-//            .responseJSON { response in
-//                print(response)
-//            }
-//    }
     
     @IBAction func addDocumentsPressed(_ sender: UIButton) {
         let alert = UIAlertController(title: "Choose a Source", message: "From where would you like to add the document?", preferredStyle: .actionSheet)

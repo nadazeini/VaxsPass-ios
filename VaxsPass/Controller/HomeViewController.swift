@@ -16,6 +16,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var imgQRCode: UIImageView!
     var qrcodeImage: CIImage!
+    var name: String = ""
     var create_user_params : [String:Any] = [
         "oauth": "",
         "name": "test123", //need to update name to the one from firebase
@@ -33,6 +34,8 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
              if let users = snapshot.value as? [String:Any] {
                   print(users["username"])
                 self.username.text = users["username"] as? String
+                self.name = users["username"] as? String ?? ""
+                print("name \(self.name)")
              }
         })
     }
@@ -43,30 +46,6 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         self.create_user_params.updateValue(self.userID ?? "", forKey: "oauth")
     }
     let create_user_url = "https://glacial-inlet-64915.herokuapp.com/create-user"
-    @IBAction func GenerateQRCode(_ sender: Any) {
-        self.postRequest(url:create_user_url, parameters: self.create_user_params , completion: {response in
-                    print("done calling")
-            self.addDocumentsButton.isHidden = true
-            self.addDocumentsButton.isEnabled = false
-            if let json = response as? Dictionary<String,AnyObject> {
-//                print(json["status"] ?? "no response")
-//                print(json["encode"] ?? "no response")
-//                print(json["txid"] ?? "no response")
-                if(json["status"] as! String  == "Success"){
-                    //generate qr code here on
-                    let passUrl = "https://glacial-inlet-64915.herokuapp.com/index.html?oauth=\(self.create_user_params["oauth"] ?? "")"
-                    let stringData = passUrl.data(using: .utf8)
-                    if self.qrcodeImage == nil {
-                        let filter = CIFilter(name: "CIQRCodeGenerator")
-                        filter?.setValue(stringData, forKey: "inputMessage")
-                        filter?.setValue("Q", forKey: "inputCorrectionLevel")
-                        self.qrcodeImage = filter?.outputImage
-                        self.imgQRCode.image = UIImage(ciImage: self.qrcodeImage)
-                    }
-                }
-            }
-        })
-    }
     func sendRequestAndGenerateQRCode() -> Bool{
         var registered : Bool = false
         self.postRequest(url:create_user_url, parameters: self.create_user_params , completion: {response in
@@ -96,6 +75,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { response in
                 if(response.error == nil){
+                    print("loading")
                     completion(response.value)
                 } else {
                     print("failed")
@@ -122,10 +102,9 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                     self.create_user_params.updateValue(vaccine_type , forKey: "vaccine_type")
                     self.create_user_params.updateValue(completed, forKey: "completed")
                     self.create_user_params.updateValue(date, forKey: "date")
+//                    self.create_user_params.updateValue(self.name, forKey: "name")
                     print(self.create_user_params)
-                    if(self.sendRequestAndGenerateQRCode() == true){
-                        
-                    }
+                    self.sendRequestAndGenerateQRCode()
                 }
             }
         }

@@ -64,7 +64,7 @@
                                 <color key="tintColor" red="0.98041945695877075" green="0.027453536167740822" blue="0.055089525878429413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-ML-JJA">
-                                <rect key="frame" x="39" y="142" width="312" height="300"/>
+                                <rect key="frame" x="39" y="142.66666666666663" width="312" height="300"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="YGj-KY-mml"/>
@@ -97,7 +97,6 @@
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Dlg-Hb-xHb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="GenerateQRButton" destination="rpt-ra-hQZ" id="ehF-7R-W35"/>
                         <outlet property="imgQRCode" destination="Aua-dV-oCq" id="l21-Ws-GAe"/>
                     </connections>
                 </viewController>

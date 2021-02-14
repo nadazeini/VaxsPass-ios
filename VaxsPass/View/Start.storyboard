@@ -44,53 +44,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message Chip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciZ-Wi-0oH">
-                                <rect key="frame" x="35" y="280" width="344" height="34"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="send" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatbot's responses will be here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuB-dE-6ap">
-                                <rect key="frame" x="35" y="85" width="344" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatbot's responses will be here" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuB-dE-6ap">
+                                <rect key="frame" x="35" y="144" width="344" height="23.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="gh7-1a-EPv"/>
+                                    <constraint firstAttribute="height" priority="250" constant="150" id="gh7-1a-EPv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngR-L2-bdD">
-                                <rect key="frame" x="95" y="329" width="224" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngR-L2-bdD" customClass="VaxButton" customModule="VaxsPass" customModuleProvider="target">
+                                <rect key="frame" x="22" y="711" width="370" height="49"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="KZR-Gz-vlg"/>
+                                    <constraint firstAttribute="height" constant="49" id="KZR-Gz-vlg"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Ask">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="Avenir-Book"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                                <state key="normal" title="Ask"/>
                                 <connections>
                                     <action selector="askButton:" destination="dqO-lI-as0" eventType="touchUpInside" id="3Lk-2N-Zd7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message Chip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciZ-Wi-0oH">
+                                <rect key="frame" x="35" y="442" width="344" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="UiV-PW-59I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="send" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gRS-w4-2CY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gRS-w4-2CY" firstAttribute="bottom" secondItem="ngR-L2-bdD" secondAttribute="bottom" constant="53" id="1ZU-nG-PfM"/>
                             <constraint firstItem="FuB-dE-6ap" firstAttribute="leading" secondItem="gRS-w4-2CY" secondAttribute="leading" constant="35" id="1en-0T-atD"/>
-                            <constraint firstItem="ngR-L2-bdD" firstAttribute="top" secondItem="ciZ-Wi-0oH" secondAttribute="bottom" constant="15" id="3kM-Us-bQ8"/>
-                            <constraint firstItem="gRS-w4-2CY" firstAttribute="trailing" secondItem="ngR-L2-bdD" secondAttribute="trailing" constant="95" id="5eO-tt-qOC"/>
-                            <constraint firstItem="ngR-L2-bdD" firstAttribute="top" secondItem="ciZ-Wi-0oH" secondAttribute="bottom" constant="15" id="Asl-gy-CYe"/>
-                            <constraint firstItem="ngR-L2-bdD" firstAttribute="leading" secondItem="gRS-w4-2CY" secondAttribute="leading" constant="95" id="Wqn-sd-7mk"/>
-                            <constraint firstItem="ciZ-Wi-0oH" firstAttribute="top" secondItem="FuB-dE-6ap" secondAttribute="bottom" constant="45" id="eAI-eW-hpL"/>
-                            <constraint firstItem="FuB-dE-6ap" firstAttribute="top" secondItem="gRS-w4-2CY" secondAttribute="top" constant="41" id="fuA-GQ-vWc"/>
-                            <constraint firstItem="ciZ-Wi-0oH" firstAttribute="top" secondItem="FuB-dE-6ap" secondAttribute="bottom" constant="45" id="iFy-NA-keA"/>
+                            <constraint firstItem="gRS-w4-2CY" firstAttribute="trailing" secondItem="ngR-L2-bdD" secondAttribute="trailing" constant="22" id="PEx-de-kln"/>
+                            <constraint firstItem="ngR-L2-bdD" firstAttribute="leading" secondItem="gRS-w4-2CY" secondAttribute="leading" constant="22" id="e2k-AD-Pc2"/>
+                            <constraint firstItem="ciZ-Wi-0oH" firstAttribute="top" secondItem="FuB-dE-6ap" secondAttribute="bottom" priority="250" constant="274.5" id="eAI-eW-hpL"/>
+                            <constraint firstItem="FuB-dE-6ap" firstAttribute="top" secondItem="gRS-w4-2CY" secondAttribute="top" constant="100" id="fuA-GQ-vWc"/>
+                            <constraint firstItem="ciZ-Wi-0oH" firstAttribute="top" secondItem="FuB-dE-6ap" secondAttribute="bottom" priority="250" constant="274.5" id="iFy-NA-keA"/>
+                            <constraint firstItem="ngR-L2-bdD" firstAttribute="top" secondItem="ciZ-Wi-0oH" secondAttribute="bottom" priority="250" constant="8" id="lEQ-1h-8Ac"/>
                             <constraint firstItem="gRS-w4-2CY" firstAttribute="trailing" secondItem="FuB-dE-6ap" secondAttribute="trailing" constant="35" id="lQG-bf-b2R"/>
                             <constraint firstItem="gRS-w4-2CY" firstAttribute="trailing" secondItem="ciZ-Wi-0oH" secondAttribute="trailing" constant="35" id="vLN-K6-RYY"/>
                             <constraint firstItem="ciZ-Wi-0oH" firstAttribute="leading" secondItem="gRS-w4-2CY" secondAttribute="leading" constant="35" id="vOc-gO-Lns"/>

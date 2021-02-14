@@ -67,12 +67,6 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
     }
     let image = UIImagePickerController()
     let googleTextRec = GoogleCloudOCR()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        image.delegate = self
-        image.allowsEditing = false
-    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let userImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {

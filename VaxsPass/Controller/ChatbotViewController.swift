@@ -11,20 +11,19 @@ import Alamofire
 
 class ChatbotViewController: UIViewController {
     
-    var query: Parameters = ["query": "what is coronavirus?"]
+    var query: Parameters = ["query": ""]
 
     @IBOutlet weak var responseField: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBAction func askButton(_ sender: Any) {
         if let safeText = textField.text{
-//            query["query"] = safeText
-            AF.request("https://glacial-inlet-64915.herokuapp.com/openai",method: .post,parameters: query,headers: .none).responseData(completionHandler: { (response) in
+            query["query"] = safeText
+            AF.request("https://glacial-inlet-64915.herokuapp.com/openai",method: .post,parameters: query,encoding: JSONEncoding.default, headers: .none).responseData(completionHandler: { (response) in
                 if let safeData = response.data {
-                    print(try? JSONDecoder().decode(Chat.self, from: safeData))
-//                    print(safeData as! JSON)
-//                    print(response.request)
-                    print(response.response)
-                    }
+                    let decodedData = try? JSONDecoder().decode(Chat.self, from: safeData)
+                    self.responseField.text = decodedData?.response
+                    
+                }
                 }
             )
             
@@ -43,5 +42,13 @@ class ChatbotViewController: UIViewController {
 
 
 struct Chat: Codable{
-    let reponse: String
+    let response: String
+    
+    enum CodingKeys: String, CodingKey {
+        case response
+    }
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        response = try container.decode(String.self, forKey: .response)
+    }
 }

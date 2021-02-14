@@ -213,31 +213,6 @@ PODS:
     - abseil/base/config
     - abseil/meta/type_traits
   - Alamofire (5.2.2)
-  - ApiAI (0.7.2):
-    - ApiAI/AudioFileConverter (= 0.7.2)
-    - ApiAI/Core (= 0.7.2)
-    - ApiAI/Events (= 0.7.2)
-    - ApiAI/ResponseMapping (= 0.7.2)
-    - ApiAI/UIKit (= 0.7.2)
-    - ApiAI/UserEntities (= 0.7.2)
-    - ApiAI/VoiceFileRequest (= 0.7.2)
-    - ApiAI/VoiceRequest (= 0.7.2)
-  - ApiAI/AudioFileConverter (0.7.2):
-    - ApiAI/Core
-  - ApiAI/Core (0.7.2)
-  - ApiAI/Events (0.7.2):
-    - ApiAI/Core
-  - ApiAI/ResponseMapping (0.7.2):
-    - ApiAI/Core
-  - ApiAI/UIKit (0.7.2):
-    - ApiAI/Core
-    - ApiAI/VoiceRequest
-  - ApiAI/UserEntities (0.7.2):
-    - ApiAI/Core
-  - ApiAI/VoiceFileRequest (0.7.2):
-    - ApiAI/Core
-  - ApiAI/VoiceRequest (0.7.2):
-    - ApiAI/Core
   - BoringSSL-GRPC (0.0.7):
     - BoringSSL-GRPC/Implementation (= 0.0.7)
     - BoringSSL-GRPC/Interface (= 0.0.7)
@@ -367,7 +342,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - ApiAI
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -379,7 +353,6 @@ SPEC REPOS:
   trunk:
     - abseil
     - Alamofire
-    - ApiAI
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAnalytics
@@ -405,7 +378,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
-  ApiAI: d4b49d3736f33ce6f3ef66dc33c0e0fccb23579e
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Firebase: 8db6f2d1b2c5e2984efba4949a145875a8f65fe5
   FirebaseAnalytics: 5dd088bd2e67bb9d13dbf792d1164ceaf3052193
@@ -428,6 +400,6 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
 
-PODFILE CHECKSUM: 56180f7209ae972d4036f63e6179f90ded43879c
+PODFILE CHECKSUM: 2fd178e1b725cc915d8dd7102e0192fb6368fd96
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

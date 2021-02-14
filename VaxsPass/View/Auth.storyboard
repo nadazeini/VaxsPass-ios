@@ -135,12 +135,22 @@
                     <connections>
                         <outlet property="emailTextField" destination="bgb-Y9-dfr" id="feC-7O-Gnz"/>
                         <outlet property="passwordTextField" destination="mML-Ll-qKm" id="gTA-Li-gDC"/>
-                        <segue destination="Gaz-gw-ePw" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="gnn-KB-Kw7"/>
+                        <segue destination="NQQ-Mr-XVp" kind="show" identifier="home" id="xTn-Gw-xuC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thx-vh-SHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1160.8695652173915" y="-43.526785714285715"/>
+            <point key="canvasLocation" x="1152" y="-44"/>
+        </scene>
+        <!--Start-->
+        <scene sceneID="qbd-kI-DyI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Start" id="NQQ-Mr-XVp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0TV-lh-eqS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXD-M0-y22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="343"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6O1-h2-jbs">
@@ -288,29 +298,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1g-Dj-GMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2205" y="-44"/>
+            <point key="canvasLocation" x="2945" y="-44"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Hq0-uV-MGJ">
-            <objects>
-                <tabBarController id="Gaz-gw-ePw" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NfC-62-tUY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="0Fu-AO-pTT" kind="relationship" relationship="viewControllers" id="ugc-Vy-7K9"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qxD-bB-4Be" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3179" y="-55"/>
-        </scene>
-        <!--Home-->
+        <!--Start-->
         <scene sceneID="2o4-nH-S2C">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="0Fu-AO-pTT" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Start" id="0Fu-AO-pTT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="u6c-Lv-jKL"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWi-ws-s0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -319,7 +312,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JCX-uy-756"/>
+        <segue reference="h4l-4g-tFc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="WelcomeIllustration" width="750" height="728"/>

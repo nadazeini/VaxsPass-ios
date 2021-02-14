@@ -109,7 +109,6 @@
 				FF0F547E25D7D43A002C39B6 /* View */,
 				FA043CF525D784B800CB8078 /* Assets.xcassets */,
 				FA043CFA25D784B800CB8078 /* Info.plist */,
-				FA043D0125D78D7F00CB8078 /* Start.storyboard */,
 				FA043D0B25D7A35300CB8078 /* GoogleMapsViewController.swift */,
 				FA043D1325D7BC4000CB8078 /* Models.swift */,
 				FA043D6725D84C5800CB8078 /* MapMarker.swift */,
@@ -140,6 +139,7 @@
 		FF0F547E25D7D43A002C39B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA043D0125D78D7F00CB8078 /* Start.storyboard */,
 				FA043CF725D784B800CB8078 /* LaunchScreen.storyboard */,
 				FA043CF225D784B500CB8078 /* Main.storyboard */,
 				FF072BDD25D78E7800C299ED /* Auth.storyboard */,

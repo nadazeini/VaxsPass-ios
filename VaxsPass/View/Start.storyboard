@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -100,11 +101,6 @@
                         <outlet property="responseField" destination="FuB-dE-6ap" id="z0J-Xl-sV4"/>
                         <outlet property="textField" destination="ciZ-Wi-0oH" id="Ww7-1y-d9t"/>
                     </connections>
-=======
-                    <tabBarItem key="tabBarItem" title="Info" id="Lst-3W-tQW">
-                        <imageReference key="image" image="info" catalog="system" symbolScale="default"/>
-                    </tabBarItem>
->>>>>>> master
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZO4-yC-C9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,8 +189,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="location.north.fill" catalog="system" width="108" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

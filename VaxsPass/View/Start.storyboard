@@ -100,6 +100,11 @@
                         <outlet property="responseField" destination="FuB-dE-6ap" id="z0J-Xl-sV4"/>
                         <outlet property="textField" destination="ciZ-Wi-0oH" id="Ww7-1y-d9t"/>
                     </connections>
+=======
+                    <tabBarItem key="tabBarItem" title="Info" id="Lst-3W-tQW">
+                        <imageReference key="image" image="info" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+>>>>>>> master
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZO4-yC-C9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlL-rX-0p0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2062" y="771"/>
+            <point key="canvasLocation" x="2068" y="318"/>
         </scene>
         <!--GoogleMapsViewController-->
         <scene sceneID="Aux-3s-3DM">
@@ -155,7 +160,9 @@
                             <constraint firstItem="hwt-sL-YQt" firstAttribute="top" secondItem="FLJ-Iq-BYm" secondAttribute="top" id="wGO-hU-fvD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="location.circle" catalog="system" id="R88-uR-Zey"/>
+                    <tabBarItem key="tabBarItem" title="Vaccine Locations" id="R88-uR-Zey">
+                        <imageReference key="image" image="location.north.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="mapView" destination="hwt-sL-YQt" id="23C-Hh-ENb"/>
                         <segue destination="hRv-8a-fX9" kind="presentation" identifier="LocationInfoView" id="x9Y-Jt-Jnb"/>
@@ -163,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9s-zN-sbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="771"/>
+            <point key="canvasLocation" x="687" y="318"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rZv-MM-xNx">
@@ -176,9 +183,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="N8E-LG-HFP" kind="relationship" relationship="viewControllers" id="NCg-Bz-2Hj"/>
-                        <segue destination="dqO-lI-as0" kind="relationship" relationship="viewControllers" id="044-Iv-HW1"/>
-                        <segue destination="XQj-P1-p7h" kind="relationship" relationship="viewControllers" id="u6V-8Z-o5C"/>
                         <segue destination="5nX-eH-JP8" kind="relationship" relationship="viewControllers" id="0Kt-gV-vEl"/>
+                        <segue destination="dqO-lI-as0" kind="relationship" relationship="viewControllers" id="044-Iv-HW1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyD-Fp-Uc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,9 +193,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="location.circle" catalog="system" width="128" height="121"/>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="location.north.fill" catalog="system" width="108" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

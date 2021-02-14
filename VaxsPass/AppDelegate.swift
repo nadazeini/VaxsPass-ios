@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ArcGIS
 import GooglePlaces
 import Firebase
 import IQKeyboardManagerSwift
@@ -26,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configuration.clientAccessToken = "AIzaSyA44UP8sSTsX3yLcaYQFOaaUGIgrBaVOws"
         let apiai = ApiAI.shared()
         apiai?.configuration = configuration
+//        var ref: DatabaseReference!
+//        ref = Database.database().reference().ref.child("userInfo")
+        //realtime db setup
         return true
     }
 

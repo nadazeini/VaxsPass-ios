@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="690" y="-978"/>
         </scene>
-        <!--Chatbot View Controller-->
+        <!--ChatBot-->
         <scene sceneID="MrB-tJ-fE2">
             <objects>
                 <viewController id="dqO-lI-as0" customClass="ChatbotViewController" customModule="VaxsPass" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,9 +67,9 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message Chip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciZ-Wi-0oH">
-                                <rect key="frame" x="35" y="442" width="344" height="34"/>
+                                <rect key="frame" x="22" y="642" width="370" height="49"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="UiV-PW-59I"/>
+                                    <constraint firstAttribute="height" constant="49" id="UiV-PW-59I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="send" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
@@ -85,13 +85,13 @@
                             <constraint firstItem="ciZ-Wi-0oH" firstAttribute="top" secondItem="FuB-dE-6ap" secondAttribute="bottom" priority="250" constant="274.5" id="eAI-eW-hpL"/>
                             <constraint firstItem="FuB-dE-6ap" firstAttribute="top" secondItem="gRS-w4-2CY" secondAttribute="top" constant="100" id="fuA-GQ-vWc"/>
                             <constraint firstItem="ciZ-Wi-0oH" firstAttribute="top" secondItem="FuB-dE-6ap" secondAttribute="bottom" priority="250" constant="274.5" id="iFy-NA-keA"/>
-                            <constraint firstItem="ngR-L2-bdD" firstAttribute="top" secondItem="ciZ-Wi-0oH" secondAttribute="bottom" priority="250" constant="8" id="lEQ-1h-8Ac"/>
+                            <constraint firstItem="ngR-L2-bdD" firstAttribute="top" secondItem="ciZ-Wi-0oH" secondAttribute="bottom" priority="251" constant="20" id="lEQ-1h-8Ac"/>
                             <constraint firstItem="gRS-w4-2CY" firstAttribute="trailing" secondItem="FuB-dE-6ap" secondAttribute="trailing" constant="35" id="lQG-bf-b2R"/>
-                            <constraint firstItem="gRS-w4-2CY" firstAttribute="trailing" secondItem="ciZ-Wi-0oH" secondAttribute="trailing" constant="35" id="vLN-K6-RYY"/>
-                            <constraint firstItem="ciZ-Wi-0oH" firstAttribute="leading" secondItem="gRS-w4-2CY" secondAttribute="leading" constant="35" id="vOc-gO-Lns"/>
+                            <constraint firstItem="gRS-w4-2CY" firstAttribute="trailing" secondItem="ciZ-Wi-0oH" secondAttribute="trailing" constant="22" id="vLN-K6-RYY"/>
+                            <constraint firstItem="ciZ-Wi-0oH" firstAttribute="leading" secondItem="gRS-w4-2CY" secondAttribute="leading" constant="22" id="vOc-gO-Lns"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="info.circle" catalog="system" id="Lst-3W-tQW"/>
+                    <tabBarItem key="tabBarItem" title="ChatBot" image="text.bubble" catalog="system" id="Lst-3W-tQW"/>
                     <connections>
                         <outlet property="responseField" destination="FuB-dE-6ap" id="z0J-Xl-sV4"/>
                         <outlet property="textField" destination="ciZ-Wi-0oH" id="Ww7-1y-d9t"/>
@@ -152,7 +152,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Vaccine Locations" id="R88-uR-Zey">
-                        <imageReference key="image" image="location.north.fill" catalog="system" symbolScale="default"/>
+                        <imageReference key="image" image="map" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="mapView" destination="hwt-sL-YQt" id="23C-Hh-ENb"/>
@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9s-zN-sbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="318"/>
+            <point key="canvasLocation" x="25" y="108"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rZv-MM-xNx">
@@ -184,9 +184,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="location.north.fill" catalog="system" width="108" height="128"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

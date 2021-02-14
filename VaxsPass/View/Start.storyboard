@@ -111,8 +111,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="N8E-LG-HFP" kind="relationship" relationship="viewControllers" id="NCg-Bz-2Hj"/>
-                        <segue destination="dqO-lI-as0" kind="relationship" relationship="viewControllers" id="044-Iv-HW1"/>
                         <segue destination="5nX-eH-JP8" kind="relationship" relationship="viewControllers" id="0Kt-gV-vEl"/>
+                        <segue destination="dqO-lI-as0" kind="relationship" relationship="viewControllers" id="044-Iv-HW1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyD-Fp-Uc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

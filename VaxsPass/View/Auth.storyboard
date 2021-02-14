@@ -75,10 +75,10 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pWY-Yl-hyn">
-                                <rect key="frame" x="42" y="654" width="306" height="106"/>
+                                <rect key="frame" x="22" y="654" width="346" height="106"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdl-Ct-CTF" customClass="VaxButton" customModule="VaxsPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="306" height="49"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="49"/>
                                         <color key="backgroundColor" red="0.96950048209999995" green="0.16291478279999999" blue="0.23277422789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="4kU-Wn-CAD"/>
@@ -91,13 +91,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dB-nD-hju" customClass="VaxButton" customModule="VaxsPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="57" width="306" height="49"/>
+                                        <rect key="frame" x="0.0" y="57" width="346" height="49"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="gyf-bX-2nI"/>
                                         </constraints>
                                         <state key="normal" title="Sign In with Apple">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" systemColor="systemGray6Color"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -107,8 +107,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mML-Ll-qKm" firstAttribute="leading" secondItem="BLT-R2-rCF" secondAttribute="leading" constant="22" id="4Ax-2J-npi"/>
-                            <constraint firstItem="pWY-Yl-hyn" firstAttribute="leading" secondItem="BLT-R2-rCF" secondAttribute="leading" constant="42" id="4UC-H0-Yyf"/>
-                            <constraint firstItem="BLT-R2-rCF" firstAttribute="trailing" secondItem="pWY-Yl-hyn" secondAttribute="trailing" constant="42" id="7Wv-Qh-pvO"/>
+                            <constraint firstItem="pWY-Yl-hyn" firstAttribute="leading" secondItem="BLT-R2-rCF" secondAttribute="leading" constant="22" id="4UC-H0-Yyf"/>
+                            <constraint firstItem="BLT-R2-rCF" firstAttribute="trailing" secondItem="pWY-Yl-hyn" secondAttribute="trailing" constant="22" id="7Wv-Qh-pvO"/>
                             <constraint firstItem="mML-Ll-qKm" firstAttribute="top" secondItem="bgb-Y9-dfr" secondAttribute="bottom" constant="8" id="8Bz-0n-LwC"/>
                             <constraint firstItem="BLT-R2-rCF" firstAttribute="trailing" secondItem="iVl-5O-eeD" secondAttribute="trailing" constant="73" id="9eH-kq-9Mr"/>
                             <constraint firstItem="bgb-Y9-dfr" firstAttribute="leading" secondItem="BLT-R2-rCF" secondAttribute="leading" constant="22" id="Cu3-aD-rC0"/>
@@ -230,19 +230,6 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mv-7N-cja" customClass="VaxButton" customModule="VaxsPass" customModuleProvider="target">
-                                <rect key="frame" x="42" y="674" width="306" height="49"/>
-                                <color key="backgroundColor" red="0.96950048209999995" green="0.16291478279999999" blue="0.23277422789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="Bvl-92-mCq"/>
-                                </constraints>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="SignUpPressed:" destination="Aq3-nr-cjX" eventType="touchUpInside" id="R67-fp-OS1"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5DY-AT-sgc">
                                 <rect key="frame" x="70" y="780" width="250" height="30"/>
                                 <subviews>
@@ -263,17 +250,45 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="m1u-Ff-qaW">
+                                <rect key="frame" x="22" y="610" width="346" height="113"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mv-7N-cja" customClass="VaxButton" customModule="VaxsPass" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="49"/>
+                                        <color key="backgroundColor" red="0.96950048209999995" green="0.16291478279999999" blue="0.23277422789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="Bvl-92-mCq"/>
+                                        </constraints>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SignUpPressed:" destination="Aq3-nr-cjX" eventType="touchUpInside" id="R67-fp-OS1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn1-fJ-l4a" customClass="VaxButton" customModule="VaxsPass" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="346" height="49"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="Vkl-JO-nws"/>
+                                        </constraints>
+                                        <state key="normal" title="Sign Up with Apple">
+                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hgr-cE-ZH3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5DY-AT-sgc" firstAttribute="top" secondItem="m1u-Ff-qaW" secondAttribute="bottom" constant="57" id="04p-HF-Wu7"/>
                             <constraint firstItem="sLD-sb-5aC" firstAttribute="leading" secondItem="hgr-cE-ZH3" secondAttribute="leading" id="3x5-df-Wn2"/>
                             <constraint firstItem="sLD-sb-5aC" firstAttribute="top" secondItem="hgr-cE-ZH3" secondAttribute="top" id="6E0-Et-2BQ"/>
+                            <constraint firstItem="m1u-Ff-qaW" firstAttribute="leading" secondItem="hgr-cE-ZH3" secondAttribute="leading" constant="22" id="6RW-aJ-XIy"/>
                             <constraint firstItem="hgr-cE-ZH3" firstAttribute="trailing" secondItem="obF-BR-jCo" secondAttribute="trailing" constant="22" id="8Fo-aH-hYJ"/>
                             <constraint firstItem="hlZ-en-NLZ" firstAttribute="top" secondItem="5Xs-lF-0gV" secondAttribute="bottom" constant="8" id="8Pv-FE-DF6"/>
-                            <constraint firstItem="5DY-AT-sgc" firstAttribute="top" secondItem="8mv-7N-cja" secondAttribute="bottom" constant="57" id="CaG-hA-QIe"/>
                             <constraint firstItem="5DY-AT-sgc" firstAttribute="bottom" secondItem="hgr-cE-ZH3" secondAttribute="bottom" id="ESk-dL-plM"/>
-                            <constraint firstItem="8mv-7N-cja" firstAttribute="leading" secondItem="hgr-cE-ZH3" secondAttribute="leading" constant="42" id="Fme-ti-OO4"/>
                             <constraint firstItem="5Xs-lF-0gV" firstAttribute="top" secondItem="sLD-sb-5aC" secondAttribute="bottom" constant="50" id="H8Y-Kg-cIG"/>
                             <constraint firstItem="hgr-cE-ZH3" firstAttribute="trailing" secondItem="5Xs-lF-0gV" secondAttribute="trailing" constant="20" id="NQE-AI-Pj9"/>
                             <constraint firstItem="sLD-sb-5aC" firstAttribute="trailing" secondItem="hgr-cE-ZH3" secondAttribute="trailing" id="X7n-d0-f8f"/>
@@ -284,7 +299,7 @@
                             <constraint firstItem="obF-BR-jCo" firstAttribute="centerY" secondItem="5f2-uf-xKA" secondAttribute="centerY" id="jlw-f3-Pnb"/>
                             <constraint firstItem="hgr-cE-ZH3" firstAttribute="trailing" secondItem="5DY-AT-sgc" secondAttribute="trailing" constant="70" id="tp2-FW-XRe"/>
                             <constraint firstItem="5DY-AT-sgc" firstAttribute="bottom" secondItem="hgr-cE-ZH3" secondAttribute="bottom" id="xy7-5F-ykH"/>
-                            <constraint firstItem="hgr-cE-ZH3" firstAttribute="trailing" secondItem="8mv-7N-cja" secondAttribute="trailing" constant="42" id="yAS-dM-PXq"/>
+                            <constraint firstItem="hgr-cE-ZH3" firstAttribute="trailing" secondItem="m1u-Ff-qaW" secondAttribute="trailing" constant="22" id="yIE-qm-dlz"/>
                             <constraint firstItem="hlZ-en-NLZ" firstAttribute="leading" secondItem="hgr-cE-ZH3" secondAttribute="leading" constant="20" id="zPW-jV-vtF"/>
                         </constraints>
                     </view>
@@ -312,7 +327,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="h4l-4g-tFc"/>
+        <segue reference="JCX-uy-756"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="WelcomeIllustration" width="750" height="728"/>
@@ -328,6 +343,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

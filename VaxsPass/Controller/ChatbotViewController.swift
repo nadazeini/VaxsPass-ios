@@ -34,6 +34,7 @@ class ChatbotViewController: UIViewController {
                     
                 }
                 self.alert.dismiss(animated: true, completion: nil)
+                self.textField.text = ""
                 }
             )
             

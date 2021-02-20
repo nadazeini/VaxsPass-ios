@@ -121,7 +121,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                     self.create_user_params.updateValue(vaccine_type , forKey: "vaccine_type")
                     self.create_user_params.updateValue(completed, forKey: "completed")
                     self.create_user_params.updateValue(date, forKey: "date")
-//                    self.create_user_params.updateValue(self.name, forKey: "name")
+                    self.create_user_params.updateValue(self.name, forKey: "name")
                     print(self.create_user_params)
                     
                     self.sendRequestAndGenerateQRCode()

@@ -9,8 +9,7 @@ import Foundation
 import Alamofire
 
 class GoogleCloudOCR {
-//    private let apiKey = "AIzaSyBZZOFM9otkX6J0NsDtDoNyNybY3HG7xeE"
-    private let apiKey = "AIzaSyARNJeV0HUI1CcAVuKN6VQ__PwET2KZ6Rc"
+    private let apiKey = Secrets.GoogleKey.rawValue
     private var apiURL: URL {
         return URL(string: "https://vision.googleapis.com/v1/images:annotate?key=\(apiKey)")!
     }

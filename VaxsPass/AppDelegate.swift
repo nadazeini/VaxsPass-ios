@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //should hide keys lol
         
-        GMSPlacesClient.provideAPIKey("AIzaSyARNJeV0HUI1CcAVuKN6VQ__PwET2KZ6Rc")
+        GMSPlacesClient.provideAPIKey(Secrets.GoogleKey.rawValue)
         // Override point for customization after application launch.
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true

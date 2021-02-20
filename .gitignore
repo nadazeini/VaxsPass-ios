@@ -25,3 +25,7 @@ build/
 *~
 *.dat
 *.dep
+
+
+*/GoogleService-Info.plist
+*/Secrets.swift

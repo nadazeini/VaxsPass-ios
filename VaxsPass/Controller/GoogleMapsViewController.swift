@@ -15,7 +15,7 @@ class GoogleMapsViewController: UIViewController, CLLocationManagerDelegate, MKM
     let locationManager = CLLocationManager()
     var lat: Double = 0.0
     var long: Double = 0.0
-    var apiKey = "AIzaSyARNJeV0HUI1CcAVuKN6VQ__PwET2KZ6Rc"
+    var apiKey = Secrets.GoogleKey.rawValue
     var locations: [Place.Location.LatLong] = []
     var markers: [MapMarker] = []
     var annotations = [MKAnnotation]()
